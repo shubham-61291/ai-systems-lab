@@ -1,0 +1,3683 @@
+{
+  "document": {
+    "title": "Comprehensive Operational Policy and Employee Handbook: Sony India (Bangalore)",
+    "version": "1.0",
+    "last_updated": "January 23, 2026",
+    "effective_date": "February 1, 2026",
+    "revision_history": [
+      {
+        "version": "1.0",
+        "date": "January 23, 2026",
+        "changes": "Initial comprehensive policy document creation"
+      }
+    ]
+  },
+  
+  "sections": [
+    {
+      "section_number": "1",
+      "title": "Governance Framework and Organizational Philosophy",
+      "subsections": [
+        {
+          "subsection_number": "1.1",
+          "title": "Preamble and Policy Statement",
+          "content": "This Comprehensive Operational Policy Document (\"The Policy\") serves as the definitive governance framework for all personnel employed by, contracted with, or otherwise engaged in business activities at Sony India's Bangalore operations. This includes, but is not limited to, the Sony India Software Centre (SISC) and associated entities located within major technology hubs such as Bagmane Tech Park and Embassy Tech Village.",
+          "legal_references": [
+            "Sony Group Code of Conduct",
+            "Sony Group People Philosophy (\"Special You, Diverse Sony\")",
+            "Karnataka Shops and Commercial Establishments Act, 1961",
+            "Information Technology Act, 2000",
+            "Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013"
+          ],
+          "objective": "To nurture trust from customers, business partners, investors, and colleagues. By adhering to these standards, Sony aims to promote sustainable growth and maintain its reputation as an ethical leader in the high-tech industry.",
+          "philosophy_statement": "Sony India believes in creating a workplace that balances innovation with responsibility, creativity with compliance, and individual excellence with collective success. Our policies reflect our commitment to being both a global technology leader and a responsible corporate citizen in India.",
+          "corporate_values": [
+            "Integrity in all actions",
+            "Innovation with purpose",
+            "Respect for diversity",
+            "Excellence in execution",
+            "Customer-centric approach",
+            "Sustainable business practices"
+          ]
+        },
+        {
+          "subsection_number": "1.2",
+          "title": "Scope and Applicability",
+          "workforce_categories": [
+            {
+              "category": "Full-time Employees (FTEs)",
+              "description": "All permanent staff on the payroll of Sony India",
+              "subcategories": [
+                "Executive and managerial staff",
+                "Technical and engineering staff",
+                "Administrative and support staff",
+                "Research and development personnel"
+              ]
+            },
+            {
+              "category": "Contractual Staff",
+              "description": "Third-party consultants, vendor resources, and temporary staff working within Sony premises or accessing Sony networks",
+              "subcategories": [
+                "Fixed-term contractors",
+                "Project-based consultants",
+                "Outsourced service providers",
+                "Managed service personnel"
+              ]
+            },
+            {
+              "category": "Interns and Trainees",
+              "description": "Individuals undergoing fixed-term training or apprenticeship",
+              "subcategories": [
+                "Summer interns",
+                "Campus recruits in probation",
+                "Graduate trainee engineers",
+                "Management trainees"
+              ]
+            },
+            {
+              "category": "Visitors",
+              "description": "Clients, vendors, and family members, strictly regarding access and conduct within physical premises",
+              "subcategories": [
+                "Client representatives",
+                "Vendor partners",
+                "Auditors and regulators",
+                "Family members on approved visits"
+              ]
+            }
+          ],
+          "extended_workplaces": [
+            "Client sites",
+            "Work-from-home (WFH) environments",
+            "Official company gatherings",
+            "Business travel locations",
+            "Co-working spaces approved by Sony",
+            "Transportation provided by company"
+          ],
+          "geographical_coverage": [
+            "All Sony offices in Bangalore",
+            "Sony development centers across Karnataka",
+            "Any location where Sony India business is conducted",
+            "Virtual environments accessing Sony networks"
+          ]
+        },
+        {
+          "subsection_number": "1.3",
+          "title": "Enforcement Authority",
+          "enforcement_bodies": [
+            {
+              "department": "Human Resources Department (HRD)",
+              "role": "Primary enforcement",
+              "responsibilities": [
+                "Policy dissemination and training",
+                "Initial violation assessment",
+                "Disciplinary procedure coordination",
+                "Record maintenance"
+              ]
+            },
+            {
+              "department": "Legal & Compliance Department",
+              "role": "Collaborative enforcement",
+              "responsibilities": [
+                "Legal compliance verification",
+                "Policy interpretation",
+                "External regulatory interface",
+                "Contractual compliance monitoring"
+              ]
+            },
+            {
+              "department": "Information Security (InfoSec) Division",
+              "role": "Collaborative enforcement",
+              "responsibilities": [
+                "IT policy enforcement",
+                "Security violation investigation",
+                "Data protection compliance",
+                "Network access monitoring"
+              ]
+            },
+            {
+              "department": "Finance and Audit Department",
+              "role": "Financial compliance enforcement",
+              "responsibilities": [
+                "Expense policy compliance",
+                "Anti-bribery monitoring",
+                "Financial control verification",
+                "Vendor payment compliance"
+              ]
+            }
+          ],
+          "authorities": [
+            {
+              "authority": "Primary Enforcer",
+              "role": "Head of HR, Sony India Bangalore",
+              "powers": [
+                "Policy implementation authority",
+                "Initial disciplinary decisions",
+                "Escalation approval",
+                "Policy exception grants"
+              ]
+            },
+            {
+              "authority": "Appellate Authority",
+              "role": "The Ethics & Compliance Committee",
+              "composition": [
+                "Head of Legal (Chairperson)",
+                "Head of HR",
+                "Business Unit Head (rotating)",
+                "Employee representative (nominated)",
+                "External ethics consultant"
+              ],
+              "powers": [
+                "Hear appeals on disciplinary actions",
+                "Interpret policy ambiguities",
+                "Recommend policy changes",
+                "Monitor compliance trends"
+              ]
+            },
+            {
+              "authority": "Statutory Compliance",
+              "committees": [
+                {
+                  "name": "Internal Committee (IC) for sexual harassment cases",
+                  "term": "3 years",
+                  "meeting_frequency": "Quarterly mandatory, additional as needed"
+                },
+                {
+                  "name": "Disciplinary Committee for code of conduct violations",
+                  "term": "Annual rotation",
+                  "meeting_frequency": "As required by incidents"
+                },
+                {
+                  "name": "Data Privacy Committee",
+                  "term": "2 years",
+                  "responsibilities": [
+                    "GDPR compliance monitoring",
+                    "Data Protection Impact Assessments",
+                    "Privacy breach response"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subsection_number": "1.4",
+          "title": "Policy Review and Amendments",
+          "review_cycle": "Annual comprehensive review, with interim updates as needed",
+          "amendment_process": {
+            "initiation": "Any department head or the Ethics Committee can propose amendments",
+            "review": "Proposals reviewed by Legal, HR, and relevant stakeholders",
+            "approval": "Requires approval from Head of HR and Head of Legal",
+            "communication": "All amendments communicated via email and portal notifications within 15 days"
+          },
+          "version_control": "Each policy update creates a new version with detailed change log",
+          "stakeholder_consultation": [
+            "Employee feedback surveys annually",
+            "Department head reviews quarterly",
+            "Legal compliance check monthly"
+          ]
+        }
+      ]
+    },
+    
+    {
+      "section_number": "2",
+      "title": "Professional Conduct and Ethics",
+      "subsections": [
+        {
+          "subsection_number": "2.1",
+          "title": "The Sony Group Code of Conduct",
+          "core_principles": [
+            {
+              "principle": "Honesty and Ethical Business Conduct",
+              "description": "Sony's reputation as an ethical company is its most valuable asset. Employees must act truthfully in all business dealings. Misrepresentation of facts, falsification of records, or deceit in reporting is strictly prohibited.",
+              "examples": [
+                "Accurate time reporting",
+                "Truthful project status updates",
+                "Honest communication with clients",
+                "Transparent financial reporting"
+              ],
+              "prohibited_actions": [
+                "Forging signatures",
+                "Altering documents without authorization",
+                "Withholding material information",
+                "Making false claims about qualifications"
+              ]
+            },
+            {
+              "principle": "Fair Competition",
+              "description": "Sony competes vigorously but fairly. Employees must not engage in anti-competitive practices, collusion with competitors, or disparagement of competitor products.",
+              "guidelines": [
+                "No price-fixing agreements",
+                "No market allocation discussions with competitors",
+                "Respect for competitor intellectual property",
+                "Objective comparison in marketing materials"
+              ],
+              "compliance_requirements": [
+                "Annual anti-trust training",
+                "Legal review of competitor agreements",
+                "Documentation of competitive analysis"
+              ]
+            },
+            {
+              "principle": "Respect for Human Rights",
+              "description": "Sony strictly prohibits the use of forced labor, child labor, or any form of human trafficking within its operations and supply chain.",
+              "implementation": [
+                "Supplier code of conduct compliance",
+                "Regular supply chain audits",
+                "Whistleblower protection for human rights concerns",
+                "Remediation processes for violations"
+              ],
+              "reporting_mechanisms": [
+                "Ethics hotline",
+                "Direct reporting to compliance officer",
+                "Annual human rights impact assessment"
+              ]
+            },
+            {
+              "principle": "Sound Decision Making",
+              "description": "Decisions should be made based on factual information and the best interests of the company, free from personal bias or external pressure.",
+              "decision_framework": [
+                "Data-driven analysis",
+                "Stakeholder consultation",
+                "Risk assessment",
+                "Documentation of rationale"
+              ],
+              "escalation_path": "When in doubt, escalate to supervisor or ethics committee"
+            },
+            {
+              "principle": "Transparency and Accountability",
+              "description": "All business activities should be conducted transparently, with clear accountability for decisions and actions.",
+              "requirements": [
+                "Clear documentation of approvals",
+                "Audit trail maintenance",
+                "Regular reporting to stakeholders",
+                "Open communication culture"
+              ]
+            },
+            {
+              "principle": "Sustainability and Environmental Responsibility",
+              "description": "Sony is committed to minimizing environmental impact and promoting sustainable practices in all business operations.",
+              "initiatives": [
+                "Carbon footprint reduction targets",
+                "E-waste management programs",
+                "Energy-efficient operations",
+                "Sustainable sourcing practices"
+              ]
+            }
+          ],
+          "annual_certification": "All employees must complete Code of Conduct training and certification annually",
+          "violation_reporting": {
+            "channels": [
+              "Direct supervisor",
+              "HR department",
+              "Ethics hotline (24/7)",
+              "Online reporting portal"
+            ],
+            "anonymity": "Reports can be made anonymously with protection against retaliation",
+            "investigation_timeline": "Initial response within 48 hours, investigation completion within 30 days"
+          }
+        },
+        {
+          "subsection_number": "2.2",
+          "title": "Conflict of Interest",
+          "definition": "A conflict of interest arises when an employee's personal interests interfere or appear to interfere with their ability to act in Sony's best interests.",
+          "policies": [
+            {
+              "policy": "Outside Employment",
+              "description": "Dual employment (moonlighting) is strictly prohibited without explicit written approval from HR and the Department Head.",
+              "approval_process": [
+                "Submit detailed proposal including nature of work, hours, and compensation",
+                "Review by HR and Legal departments",
+                "Approval requires confirmation of no conflict with Sony business",
+                "Approval valid for one year, renewable annually"
+              ],
+              "restrictions": [
+                "No work with competitors",
+                "Maximum 10 hours per week",
+                "Cannot use Sony resources",
+                "Must not impact Sony performance"
+              ]
+            },
+            {
+              "policy": "Financial Interests",
+              "description": "Employees cannot hold significant financial interest in competitors, suppliers, or customers if that interest could compromise their decision-making.",
+              "thresholds": [
+                {
+                  "interest_type": "Direct ownership",
+                  "limit": "More than 1% equity in public companies",
+                  "reporting_requirement": "Mandatory declaration"
+                },
+                {
+                  "interest_type": "Indirect ownership",
+                  "limit": "Any interest through family members",
+                  "reporting_requirement": "Mandatory declaration"
+                },
+                {
+                  "interest_type": "Stock options in competitors",
+                  "limit": "Any amount",
+                  "reporting_requirement": "Prohibited"
+                }
+              ],
+              "declaration_process": "Annual conflict of interest declaration via HR portal"
+            },
+            {
+              "policy": "Family Relationships in Workplace",
+              "description": "Employees must avoid situations where family members are in direct reporting relationships or can influence each other's career progression.",
+              "guidelines": [
+                "No direct reporting relationships between family members",
+                "Disclosure of familial relationships within same department",
+                "Recusal from decisions involving family members",
+                "Alternative reporting structures may be established"
+              ]
+            },
+            {
+              "policy": "Board Memberships and Advisory Roles",
+              "description": "Employees serving on boards or advisory committees of other organizations must obtain prior approval.",
+              "approval_criteria": [
+                "Organization not competing with Sony",
+                "Time commitment limited",
+                "Clear separation from Sony responsibilities",
+                "No confidential information sharing"
+              ]
+            }
+          ],
+          "declaration_requirements": {
+            "frequency": "Annual declaration plus updates within 30 days of changes",
+            "platform": "Online HR portal",
+            "review": "HR department reviews all declarations",
+            "actions": "Mitigation plans developed for identified conflicts"
+          },
+          "mitigation_strategies": [
+            "Recusal from specific decisions",
+            "Restructuring of reporting lines",
+            "Divestment of conflicting interests",
+            "Role reassignment"
+          ]
+        },
+        {
+          "subsection_number": "2.3",
+          "title": "Gift and Entertainment Policy",
+          "philosophy": "Maintain integrity in business relationships while respecting cultural norms of relationship building.",
+          "gift_categories": [
+            {
+              "category": "Monetary Gifts",
+              "policy": "Strictly Prohibited",
+              "description": "Cash, vouchers, gift cards, or stock options are never acceptable.",
+              "exceptions": "None",
+              "handling_procedure": "Politely decline and report to compliance if persistent"
+            },
+            {
+              "category": "Government Officials",
+              "policy": "Strictly Prohibited",
+              "description": "Offering any gift, entertainment, or thing of value to a government official to influence a decision is a criminal offense.",
+              "compliance_requirements": [
+                "FCPA training completion",
+                "Pre-approval for any interaction with officials",
+                "Documentation of all interactions",
+                "Quarterly compliance audits"
+              ]
+            },
+            {
+              "category": "Lavish Entertainment",
+              "policy": "Prohibited",
+              "description": "Excessive or frequent meals, travel, or accommodation from vendors that could create a sense of obligation.",
+              "value_limit": "₹2,000 per instance",
+              "frequency_limit": "Not more than once per quarter from same source"
+            },
+            {
+              "category": "Nominal Gifts",
+              "policy": "Permissible",
+              "description": "Items of nominal value (e.g., branded pens, diaries) during customary seasons, provided they do not influence decisions.",
+              "value_limit": "₹1,000 maximum",
+              "examples": [
+                "Corporate promotional items",
+                "Festival gifts during Diwali",
+                "Business books",
+                "Food items for team sharing"
+              ]
+            },
+            {
+              "category": "Business Meals",
+              "policy": "Permissible with limits",
+              "description": "Meals with business purpose where Sony employee is present.",
+              "guidelines": [
+                "Reasonable cost considering local standards",
+                "Business discussion documented",
+                "Not at overly luxurious venues",
+                "Proportional to business relationship"
+              ]
+            }
+          ],
+          "approval_process": {
+            "thresholds": [
+              {
+                "value_range": "Up to ₹1,000",
+                "approval": "Self-declaration after the fact"
+              },
+              {
+                "value_range": "₹1,001 - ₹5,000",
+                "approval": "Manager pre-approval"
+              },
+              {
+                "value_range": "Above ₹5,000",
+                "approval": "Compliance Officer pre-approval"
+              }
+            ],
+            "documentation": "All gifts/entertainment above ₹1,000 must be recorded in gift register",
+            "time_limit": "Pre-approval requests must be submitted at least 48 hours before acceptance"
+          },
+          "receiving_gifts_from_sony": {
+            "policy": "Sony may provide gifts to employees for recognition or celebrations",
+            "tax_implications": "Gifts above ₹5,000 per year may be taxable per income tax regulations",
+            "distribution": "Fair and consistent application across teams"
+          },
+          "charitable_donations": {
+            "policy": "Donations to charitable organizations on behalf of Sony require specific approval",
+            "approval_authority": "Corporate Social Responsibility committee",
+            "due_diligence": "Vetting of recipient organizations required"
+          }
+        },
+        {
+          "subsection_number": "2.4",
+          "title": "Anti-Bribery and Anti-Corruption",
+          "zero_tolerance": "Sony maintains zero tolerance for bribery and corruption in any form",
+          "applicable_laws": [
+            "Indian Prevention of Corruption Act, 1988",
+            "US Foreign Corrupt Practices Act (FCPA)",
+            "UK Bribery Act 2010",
+            "Sony Group Anti-Bribery Policy"
+          ],
+          "prohibited_practices": [
+            {
+              "practice": "Bribery",
+              "definition": "Offering, giving, receiving, or soliciting anything of value to influence official action",
+              "examples": [
+                "Facilitation payments (\"grease payments\")",
+                "Kickbacks on contracts",
+                "Commission payments to influence decisions"
+              ]
+            },
+            {
+              "practice": "Embezzlement",
+              "definition": "Misappropriation of company funds or property",
+              "prevention_measures": [
+                "Dual authorization for payments",
+                "Regular internal audits",
+                "Segregation of duties"
+              ]
+            },
+            {
+              "practice": "Extortion",
+              "definition": "Obtaining property through coercion",
+              "reporting_requirement": "Immediate report to Legal department"
+            }
+          ],
+          "due_diligence_requirements": {
+            "third_parties": "Enhanced due diligence for agents, distributors, and consultants",
+            "mergers_acquisitions": "Anti-corruption audit before acquisition",
+            "high_risk_countries": "Additional controls for operations in high-risk jurisdictions"
+          },
+          "training_requirements": [
+            "Mandatory annual anti-bribery training",
+            "Role-specific training for procurement and sales teams",
+            "Refresher training every six months for high-risk roles"
+          ]
+        },
+        {
+          "subsection_number": "2.5",
+          "title": "Whistleblower Protection",
+          "policy": "Sony encourages reporting of unethical behavior and protects whistleblowers from retaliation",
+          "reporting_channels": [
+            {
+              "channel": "Ethics Hotline",
+              "contact": "1800-XXX-XXXX (toll-free)",
+              "availability": "24/7",
+              "languages": ["English", "Hindi", "Kannada", "Tamil"]
+            },
+            {
+              "channel": "Online Portal",
+              "url": "ethics.sonyindia.com",
+              "features": ["Anonymous reporting", "Secure messaging", "Case tracking"]
+            },
+            {
+              "channel": "Direct to Ombudsperson",
+              "contact": "ombuds@sonyindia.com",
+              "availability": "Business hours"
+            }
+          ],
+          "protection_measures": [
+            "Strict confidentiality of reporter identity",
+            "No adverse employment action against whistleblowers",
+            "Independent investigation of retaliation claims",
+            "Legal support for whistleblowers if needed"
+          ],
+          "investigation_process": {
+            "acknowledgement": "Within 48 hours of report",
+            "preliminary_assessment": "Within 5 business days",
+            "investigation_completion": "Within 30 days (extendable for complex cases)",
+            "outcome_communication": "Summary provided to reporter where possible"
+          }
+        }
+      ]
+    },
+    
+    {
+      "section_number": "3",
+      "title": "Employment Conditions and Working Hours",
+      "subsections": [
+        {
+          "subsection_number": "3.1",
+          "title": "Official Working Hours and Flextime",
+          "standard_hours": {
+            "general_shift": "9:00 AM to 6:00 PM, Monday through Friday",
+            "core_hours": "10:00 AM - 4:00 PM (mandatory presence for meetings/collaboration)",
+            "operation_hours": "24/7 to support global business continuity",
+            "lunch_break": "45 minutes (flexible between 12:00 PM - 2:00 PM)",
+            "tea_breaks": "15 minutes each (morning and afternoon)"
+          },
+          "flextime_system": {
+            "description": "Employees are expected to be self-directed with flexibility in start and end times, provided total required working hours are met and business needs are not compromised.",
+            "parameters": [
+              "Earliest start time: 7:00 AM",
+              "Latest end time: 9:00 PM",
+              "Core hours attendance: Mandatory",
+              "Total weekly hours: 45 hours (including breaks)"
+            ],
+            "approval_process": "Department heads approve flextime schedules quarterly",
+            "tracking": "Timesheet submission required for non-exempt employees"
+          },
+          "shift_allowances": {
+            "night_shift": "Additional 15% of basic salary for shifts between 10:00 PM - 6:00 AM",
+            "rotational_shift": "Additional 10% for employees rotating between shifts weekly",
+            "transportation": "Cab facility provided for shifts ending after 8:00 PM"
+          }
+        },
+        {
+          "subsection_number": "3.2",
+          "title": "Attendance and Late Arrival Policy",
+          "late_arrival_definition": "Arriving significantly past the agreed-upon start time or missing the commencement of Core Hours without prior manager approval",
+          "tolerance_period": "15 minutes grace period for unforeseen commuting delays",
+          "reporting_requirement": "Employees must inform manager via email/teams if delayed beyond tolerance period",
+          "consequences": [
+            {
+              "level": "Initial (1-3 instances/month)",
+              "action": "Verbal counseling with Reporting Manager",
+              "documentation": "Informal note in personal file"
+            },
+            {
+              "level": "Continued (4-6 instances/month)",
+              "action": "Written warning and deduction of Casual Leave (CL) in half-day increments",
+              "documentation": "Formal warning letter"
+            },
+            {
+              "level": "Habitual (7+ instances/month)",
+              "action": "Disciplinary action for \"Habitual Negligence of Duty\" including potential impact on appraisal",
+              "documentation": "Formal disciplinary proceeding"
+            }
+          ],
+          "medical_exceptions": [
+            "Chronic health conditions with medical documentation",
+            "Disability-related accommodations",
+            "Pregnancy-related medical appointments"
+          ],
+          "technology_support": [
+            "Biometric attendance system",
+            "Mobile app for remote check-in (with GPS verification)",
+            "Automated alerts to managers for pattern recognition"
+          ]
+        },
+        {
+          "subsection_number": "3.3",
+          "title": "Remote Work and Hybrid Model",
+          "hybrid_model": {
+            "description": "Teams may operate on a hybrid model (e.g., 2-3 days in office), depending on role requirements",
+            "eligibility_criteria": [
+              "Role suitability assessment",
+              "Performance rating of 3 or above (scale of 5)",
+              "Minimum 6 months tenure",
+              "Manager approval"
+            ],
+            "schedule_flexibility": "Department heads determine team schedules considering collaboration needs"
+          },
+          "remote_work_responsibilities": [
+            {
+              "responsibility": "Availability",
+              "requirement": "Must be reachable during agreed working hours via Teams, email, or phone"
+            },
+            {
+              "responsibility": "Productivity",
+              "requirement": "Maintain or improve productivity levels compared to office work"
+            },
+            {
+              "responsibility": "Workspace",
+              "requirement": "Maintain secure, professional home workspace"
+            },
+            {
+              "responsibility": "Equipment",
+              "requirement": "Proper care of company-provided equipment"
+            }
+          ],
+          "infrastructure_support": [
+            "Laptop and peripherals provided",
+            "Internet allowance: ₹1,000 per month",
+            "VPN access for secure connectivity",
+            "IT support available during business hours"
+          ],
+          "performance_metrics": [
+            "Project delivery timelines",
+            "Response times to communications",
+            "Meeting participation and contribution",
+            "Output quality measures"
+          ],
+          "revocation_conditions": [
+            "Consistent performance degradation",
+            "Security policy violations",
+            "Unavailability during working hours",
+            "Team collaboration issues"
+          ]
+        },
+        {
+          "subsection_number": "3.4",
+          "title": "Overtime and Compensatory Time Off",
+          "policy": "Overtime should be the exception, not the norm, and requires advance approval",
+          "approval_process": [
+            "Manager pre-approval required for planned overtime",
+            "Post-facto approval within 24 hours for emergencies",
+            "Documentation in timesheet system"
+          ],
+          "compensation_options": [
+            {
+              "option": "Compensatory Time Off",
+              "rate": "1.5 times hours worked",
+              "validity": "Must be availed within 3 months",
+              "limitation": "Maximum 48 hours accumulation"
+            },
+            {
+              "option": "Overtime Payment",
+              "rate": "2 times hourly rate for weekdays, 2.5 times for weekends",
+              "eligibility": "Only for non-managerial roles",
+              "payment_timing": "Following month's payroll"
+            }
+          ],
+          "restrictions": [
+            "Maximum 12 hours overtime per week",
+            "No consecutive 7-day work periods",
+            "Minimum 11-hour rest between shifts",
+            "Health and safety considerations paramount"
+          ]
+        },
+        {
+          "subsection_number": "3.5",
+          "title": "Global Collaboration Time Zone Considerations",
+          "guidelines": [
+            "Meetings outside local business hours should be exceptional",
+            "Rotate meeting times to share inconvenience across regions",
+            "Record meetings for those who cannot attend",
+            "Respect local holidays and cultural considerations"
+          ],
+          "allowances": [
+            "Taxi service for late-night meetings ending after 9:00 PM",
+            "Meal allowance for extended meetings",
+            "Flexible start next day after late-night calls"
+          ]
+        }
+      ]
+    },
+    
+    {
+      "section_number": "4",
+      "title": "Leave Management and Time Off",
+      "subsections": [
+        {
+          "subsection_number": "4.1",
+          "title": "Leave Categories",
+          "leave_types": [
+            {
+              "type": "Earned Leave (EL) / Privilege Leave (PL)",
+              "accrual_rate": "1.25 days/month or 15-18 days/year",
+              "purpose": "Planned vacations, personal time off",
+              "eligibility": "After completion of probation period",
+              "carry_forward": "Up to 30-45 days (varies by tenure)",
+              "encashment": "Encashable at separation or annually up to 15 days",
+              "application_lead_time": "15 days for leaves exceeding 5 consecutive days",
+              "approval_authority": "Manager for up to 5 days, Department Head beyond"
+            },
+            {
+              "type": "Casual Leave (CL)",
+              "annual_entitlement": "12 days",
+              "purpose": "Short, unforeseen personal requirements",
+              "limitations": "Cannot be taken for more than 3 consecutive days",
+              "carry_forward": "Lapses at end of calendar year",
+              "encashment": "Non-encashable",
+              "notice_requirement": "Same day or day before where possible",
+              "documentation": "Self-certification sufficient"
+            },
+            {
+              "type": "Sick Leave (SL)",
+              "annual_entitlement": "12 days",
+              "accumulation_limit": "30-60 days based on tenure",
+              "purpose": "Medical reasons, health recovery",
+              "documentation": "Medical certificate required for more than 2 consecutive days",
+              "encashment": "Usually not encashable",
+              "special_cases": [
+                "Hospitalization leave: Separate entitlement",
+                "Mental health days: Included in sick leave",
+                "Preventive health checkups: 1 day per year"
+              ]
+            },
+            {
+              "type": "Maternity Leave",
+              "duration": "26 weeks paid leave (up to 8 weeks before expected delivery)",
+              "eligibility": "Female employees (up to 2 children), inclusive of pre-natal and post-natal periods",
+              "extension": "Additional 1 month unpaid leave available",
+              "documentation": "Medical certificate confirming pregnancy",
+              "benefits_continuation": "Health insurance continues during leave",
+              "work_from_home_option": "Available for 3 months post-return"
+            },
+            {
+              "type": "Paternity Leave",
+              "duration": "5 working days",
+              "eligibility": "Male employees upon birth or adoption of a child",
+              "timing": "Within 6 months of child's birth/adoption",
+              "additional_support": "Flexible work hours for 3 months post-return"
+            },
+            {
+              "type": "Adoption Leave",
+              "duration": "12 weeks for parent adopting child below 3 years, 6 weeks for child above 3 years",
+              "eligibility": "Primary adoptive parent",
+              "documentation": "Adoption paperwork",
+              "timing": "From date of custody"
+            },
+            {
+              "type": "Bereavement Leave",
+              "duration": "5 days for immediate family, 3 days for extended family",
+              "definition": "Immediate family: spouse, children, parents, siblings",
+              "extension": "International travel may warrant additional leave",
+              "documentation": "Minimal required, respect for privacy maintained"
+            },
+            {
+              "type": "Marriage Leave",
+              "duration": "5 days for own marriage",
+              "additional": "2 days for sibling's marriage",
+              "timing": "Within one month of marriage date",
+              "documentation": "Marriage invitation or certificate"
+            },
+            {
+              "type": "Study Leave",
+              "duration": "Up to 10 days per year for examinations",
+              "eligibility": "Formal degree programs with relevance to work",
+              "approval": "Based on business needs and prior performance",
+              "support": "Tuition reimbursement program available separately"
+            },
+            {
+              "type": "Jury Duty Leave",
+              "duration": "As required by court",
+              "compensation": "Difference between jury pay and regular salary paid by Sony",
+              "documentation": "Court summons required",
+              "obligation": "Employee must inform HR immediately upon receiving summons"
+            },
+            {
+              "type": "Menstrual Leave",
+              "duration": "2 days per month (unpaid)",
+              "eligibility": "Female employees experiencing severe discomfort",
+              "documentation": "Self-certification sufficient",
+              "confidentiality": "Highly confidential, minimal questions asked"
+            },
+            {
+              "type": "Gender Reassignment Leave",
+              "duration": "30 days paid medical leave",
+              "eligibility": "Employees undergoing gender confirmation procedures",
+              "additional_support": "Flexible work arrangements during transition period",
+              "confidentiality": "Strict privacy maintained"
+            }
+          ],
+          "leave_proration": "For employees joining mid-year, leaves prorated based on joining date",
+          "leave_year": "Calendar year (January to December)"
+        },
+        {
+          "subsection_number": "4.2",
+          "title": "Notice Requirements for Planned Leave",
+          "requirements": [
+            {
+              "leave_type": "Earned Leave (Short Duration: 1-2 days)",
+              "notice": "24-48 hours",
+              "approval_timeline": "Within 24 hours of submission"
+            },
+            {
+              "leave_type": "Earned Leave (Long Duration: 1 week+)",
+              "notice": "1-2 weeks recommended, 4 weeks for leaves exceeding 2 weeks",
+              "approval_timeline": "Within 3 business days"
+            },
+            {
+              "leave_type": "Casual Leave",
+              "notice": "In advance where possible, or on day of absence for unforeseen events",
+              "approval_timeline": "Same day where possible"
+            },
+            {
+              "leave_type": "Sick Leave (planned medical procedures)",
+              "notice": "2 weeks where possible",
+              "documentation": "Doctor's recommendation for procedure"
+            }
+          ],
+          "blackout_periods": [
+            "Month-end closing (Finance department)",
+            "Product launch periods (Project teams)",
+            "Audit periods (Compliance teams)",
+            "Critical project milestones"
+          ],
+          "team_coverage": "Employee must ensure work coverage during absence, coordinated with manager",
+          "cancellation_rescheduling": "Leave once approved may be cancelled with manager approval if business needs require"
+        },
+        {
+          "subsection_number": "4.3",
+          "title": "Emergency Leave",
+          "definition": "Unforeseen circumstances such as sudden illness, bereavement, or severe personal crises",
+          "notification_process": "Employee must inform Reporting Manager via email, phone, or messaging app as soon as practicable (typically by 9:30 AM on day of absence)",
+          "regularization": "Leave must be regularized in system immediately upon return, within 24 hours",
+          "documentation": "Depending on duration and type:",
+          "documentation_requirements": [
+            {
+              "duration": "1-2 days",
+              "requirement": "Self-declaration usually sufficient"
+            },
+            {
+              "duration": "3-5 days",
+              "requirement": "Medical certificate for illness, other appropriate documentation"
+            },
+            {
+              "duration": "5+ days",
+              "requirement": "Formal documentation mandatory"
+            }
+          ],
+          "emergency_contact": "HR maintains emergency contact information for critical situations",
+          "support_systems": [
+            "Employee Assistance Program for personal crises",
+            "Manager discretion for extraordinary circumstances",
+            "HR consultation available for guidance"
+          ]
+        },
+        {
+          "subsection_number": "4.4",
+          "title": "Leave During Resignation (Notice Period)",
+          "restrictions": [
+            "Employees are generally not permitted to avail Earned Leave or Casual Leave during notice period",
+            "If leave is taken (except for genuine medical emergencies), notice period may be extended by number of days of leave taken",
+            "Sick leave with valid medical documentation is permitted",
+            "Bereavement leave for immediate family is permitted"
+          ],
+          "encashment": {
+            "earned_leave": "Unutilized Earned Leave is typically encashed during Full and Final (F&F) settlement",
+            "casual_leave": "Lapses with no encashment",
+            "sick_leave": "Lapses with no encashment",
+            "calculation": "Based on basic salary at time of separation"
+          },
+          "garden_leave": "In exceptional cases, employee may be placed on garden leave during notice period with full pay and benefits",
+          "handover_requirements": "Employee must complete proper knowledge transfer before final exit"
+        },
+        {
+          "subsection_number": "4.5",
+          "title": "Leave Management System",
+          "platform": "Online leave management portal integrated with HRMS",
+          "features": [
+            "Self-service leave application",
+            "Manager approval workflow",
+            "Leave balance tracking",
+            "Calendar view of team leaves",
+            "Mobile app access",
+            "Integration with attendance system"
+          ],
+          "approval_hierarchy": [
+            "Reporting Manager → Department Head → HR (for extended leaves)",
+            "Auto-approval for casual leave up to 2 days if manager doesn't respond in 24 hours"
+          ],
+          "reporting": [
+            "Monthly leave utilization reports",
+            "Department-level leave analytics",
+            "Pattern analysis for potential issues"
+          ]
+        }
+      ]
+    },
+    
+    {
+      "section_number": "5",
+      "title": "Dress Code and Personal Appearance",
+      "subsections": [
+        {
+          "subsection_number": "5.1",
+          "title": "Philosophy: \"Smart Casual\"",
+          "description": "Respects individual choice while maintaining a professional atmosphere suitable for a global technology center. The dress code balances comfort, safety, and professionalism, recognizing Bangalore's climate and tech industry norms.",
+          "principles": [
+            "Comfort for long working hours",
+            "Safety in office environment",
+            "Professionalism in client interactions",
+            "Respect for cultural diversity",
+            "Climate appropriateness"
+          ],
+          "seasonal_considerations": [
+            {
+              "season": "Summer (March-June)",
+              "guidance": "Light fabrics, short sleeves acceptable"
+            },
+            {
+              "season": "Monsoon (July-September)",
+              "guidance": "Quick-dry fabrics recommended, indoor footwear"
+            },
+            {
+              "season": "Winter (October-February)",
+              "guidance": "Layers, sweaters, jackets acceptable"
+            }
+          ]
+        },
+        {
+          "subsection_number": "5.2",
+          "title": "Permitted Attire",
+          "general_office": {
+            "tops": [
+              "Collared shirts (polo shirts acceptable)",
+              "Casual shirts (button-down or similar)",
+              "Blouses (modest necklines)",
+              "Kurtas, kurtis (traditional wear encouraged)",
+              "Sweaters, cardigans (in air-conditioned areas)"
+            ],
+            "bottoms": [
+              "Jeans (smart, solid-colored: blue, black, grey)",
+              "Chinos, khakis",
+              "Casual trousers",
+              "Skirts (knee-length or longer)",
+              "Traditional bottoms (salwar, churidar)"
+            ],
+            "footwear": [
+              "Clean sneakers (non-athletic style)",
+              "Loafers",
+              "Sandals (with back straps)",
+              "Dress shoes",
+              "Traditional footwear (mojris, kolhapuris)"
+            ],
+            "accessories": [
+              "Belts (if loops present)",
+              "Minimal jewelry",
+              "Watches",
+              "ID badge (must be visible)"
+            ]
+          },
+          "friday_casual": {
+            "description": "Fridays allow more relaxed attire",
+            "additional_permissions": [
+              "Company-branded t-shirts",
+              "Team event shirts",
+              "Casual shorts (knee-length)",
+              "Clean sport shoes"
+            ]
+          }
+        },
+        {
+          "subsection_number": "5.3",
+          "title": "Prohibited Items",
+          "clothing": [
+            "Ripped, torn, or distressed jeans",
+            "Shorts, cargo shorts, or beachwear (except Friday casual)",
+            "Athleisure wear (track pants, sweatpants) unless accessing gym",
+            "Clothing with offensive slogans, political imagery, or excessive transparency",
+            "Tank tops, spaghetti straps, or revealing necklines",
+            "Pajamas or sleepwear",
+            "Clothing with competitor logos larger than 2 inches"
+          ],
+          "footwear": [
+            "Rubber flip-flops (bathroom slippers)",
+            "Crocs or foam clogs",
+            "Heavy construction boots",
+            "Slippers intended for indoor home use"
+          ],
+          "grooming": {
+            "expectations": "Employees are expected to maintain a neat and clean appearance",
+            "specifics": [
+              "Hair clean and styled appropriately",
+              "Facial hair neatly trimmed if grown",
+              "Minimal, non-distracting fragrances",
+              "Visible tattoos must not be offensive or excessive"
+            ]
+          },
+          "safety_considerations": [
+            "Loose clothing near machinery prohibited",
+            "Long hair must be tied back in labs",
+            "Closed-toe shoes required in certain technical areas"
+          ]
+        },
+        {
+          "subsection_number": "5.4",
+          "title": "Client-Facing Guidelines",
+          "requirement": "Business Formal attire is mandatory for client meetings, presentations, and visits",
+          "examples": [
+            "Suits (matching jacket and trousers)",
+            "Blazers with formal trousers",
+            "Dress shirts (button-down, collared)",
+            "Formal trousers (not jeans)",
+            "Formal skirts/dresses (knee-length or longer)",
+            "Traditional formal wear (sarees, suits)"
+          ],
+          "exceptions": [
+            "Client explicitly states casual dress code",
+            "Off-site team building with clients",
+            "Written approval from department head"
+          ],
+          "preparation_time": "Employees should be informed at least 24 hours before client meetings requiring formal attire",
+          "clothing_allowance": "₹5,000 annual allowance for client-facing roles to maintain professional wardrobe"
+        },
+        {
+          "subsection_number": "5.5",
+          "title": "Special Considerations",
+          "religious_accommodations": [
+            "Religious headwear permitted (hijabs, turbans, yarmulkes)",
+            "Religious markings (tilak, bindi, cross) permitted",
+            "Modesty requirements respected within safety guidelines"
+          ],
+          "medical_accommodations": [
+            "Orthopedic footwear permitted with medical documentation",
+            "Compression garments permitted",
+            "Special clothing for medical devices accommodated"
+          ],
+          "pregnancy_accommodations": [
+            "Maternity wear exempt from normal fit requirements",
+            "Comfortable footwear permitted",
+            "Flexibility in dress code during pregnancy"
+          ],
+          "disability_accommodations": [
+            "Adaptive clothing permitted",
+            "Ease of dressing considerations",
+            "Wheelchair-appropriate clothing"
+          ]
+        },
+        {
+          "subsection_number": "5.6",
+          "title": "Enforcement and Guidance",
+          "enforcement_process": [
+            "First offense: Verbal reminder by manager",
+            "Second offense: Written warning",
+            "Third offense: Meeting with HR",
+            "Persistent violations: Disciplinary action"
+          ],
+          "guidance_resources": [
+            "HR department consultation available",
+            "Visual guide on intranet",
+            "Quarterly reminders before season changes",
+            "New hire orientation includes dress code session"
+          ],
+          "manager_responsibilities": [
+            "Lead by example",
+            "Address violations promptly and privately",
+            "Consider context and intent",
+            "Escalate persistent issues to HR"
+          ]
+        }
+      ]
+    },
+    
+    {
+      "section_number": "6",
+      "title": "Prevention of Sexual Harassment (POSH)",
+      "subsections": [
+        {
+          "subsection_number": "6.1",
+          "title": "Zero Tolerance Policy",
+          "policy": "Sony India maintains a Zero Tolerance policy towards sexual harassment",
+          "compliance": "Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013",
+          "scope": "Protects all persons regardless of gender at workplace",
+          "leadership_commitment": [
+            "CEO signed policy endorsement",
+            "Annual compliance certification by board",
+            "Budget allocation for training and awareness",
+            "Quarterly review by senior management"
+          ]
+        },
+        {
+          "subsection_number": "6.2",
+          "title": "Definition of Sexual Harassment",
+          "categories": [
+            {
+              "category": "Physical Contact",
+              "examples": [
+                "Unwelcome touching, patting, pinching",
+                "Stroking, or brushing against the body",
+                "Hugging without consent",
+                "Blocking movement or physical intimidation"
+              ]
+            },
+            {
+              "category": "Demand for Favors",
+              "examples": [
+                "Requesting sexual favors in exchange for employment benefits (Quid Pro Quo)",
+                "Promising promotion for sexual cooperation",
+                "Threatening adverse action for refusal"
+              ]
+            },
+            {
+              "category": "Sexually Colored Remarks",
+              "examples": [
+                "Comments about person's body, clothing, or sexual life",
+                "Lewd jokes or innuendo",
+                "Gender-based insults or slurs",
+                "Speculation about sexual orientation"
+              ]
+            },
+            {
+              "category": "Visual Material",
+              "examples": [
+                "Showing pornography",
+                "Sexually suggestive cartoons, posters, or drawings",
+                "Displaying inappropriate screensavers",
+                "Sharing explicit content via any medium"
+              ]
+            },
+            {
+              "category": "Digital Harassment",
+              "examples": [
+                "Sending unwelcome emails of sexual nature",
+                "WhatsApp messages with sexual content",
+                "Social media interactions crossing professional boundaries",
+                "Sharing intimate images without consent"
+              ]
+            },
+            {
+              "category": "Hostile Environment",
+              "examples": [
+                "Any act that interferes with work",
+                "Creating intimidating, offensive, or hostile work environment",
+                "Persistent staring or leering",
+                "Gender-based exclusion or isolation"
+              ]
+            }
+          ],
+          "extended_workplace_coverage": [
+            "Office premises",
+            "Company-provided transportation",
+            "Off-site gatherings (conferences, parties)",
+            "Client locations",
+            "Electronic communications (Work from Home context)",
+            "Business travel",
+            "Company-sponsored events",
+            "Virtual meetings and collaborations"
+          ],
+          "third_party_harassment": "Policy applies to harassment by clients, vendors, or visitors as well"
+        },
+        {
+          "subsection_number": "6.3",
+          "title": "Internal Committee (IC)",
+          "composition_requirements": [
+            {
+              "position": "Presiding Officer",
+              "requirements": [
+                "Senior female employee",
+                "Minimum 10 years experience",
+                "Training in POSH law",
+                "Appointed for 3-year term"
+              ]
+            },
+            {
+              "position": "Internal Members",
+              "requirements": [
+                "At least 50% women members",
+                "From various departments and levels",
+                "Commitment to gender sensitivity",
+                "Training in investigation procedures"
+              ]
+            },
+            {
+              "position": "External Member",
+              "requirements": [
+                "From NGO or legal background",
+                "Expertise in POSH law",
+                "Experience in handling complaints",
+                "Independent of company influence"
+              ]
+            }
+          ],
+          "authority": {
+            "powers": "Has powers of civil court for summoning evidence and witnesses",
+            "specific_authorities": [
+              "Summon and enforce attendance",
+              "Require discovery and production of documents",
+              "Receive evidence on affidavit",
+              "Recommend interim relief"
+            ]
+          },
+          "training": [
+            "Annual POSH training for all IC members",
+            "External expert sessions quarterly",
+            "Case study discussions",
+            "Legal updates as laws evolve"
+          ],
+          "confidentiality": "All IC proceedings strictly confidential, violations punishable"
+        },
+        {
+          "subsection_number": "6.4",
+          "title": "Redressal Mechanism and Timeline",
+          "steps": [
+            {
+              "step": "Complaint Filing",
+              "timeline": "Within 3 months of incident (extendable by another 3 months with written justification)",
+              "requirements": [
+                "Six copies of complaint",
+                "Supporting documents",
+                "Witness names and contact information",
+                "Preferred language for proceedings"
+              ],
+              "assistance": "HR provides help in drafting complaint if requested"
+            },
+            {
+              "step": "Conciliation",
+              "description": "Optional before inquiry; monetary settlement is not a basis for conciliation",
+              "process": [
+                "Only at request of complainant",
+                "Facilitated by IC",
+                "No pressure to conciliate",
+                "If successful, terms documented and implemented"
+              ],
+              "outcome": "If conciliation fails or terms violated, inquiry proceeds"
+            },
+            {
+              "step": "Inquiry Process",
+              "timeline": "Completed within 90 days",
+              "procedures": [
+                "Notice to respondent within 7 days",
+                "Response from respondent within 10 days",
+                "Evidence collection and witness interviews",
+                "Hearings with both parties (separately)",
+                "Inquiry report with findings"
+              ],
+              "confidentiality": "Identity of complainant, respondent, and witnesses kept strictly confidential",
+              "support": [
+                "Complainant may bring friend/colleague for support",
+                "Translation services available",
+                "Reasonable accommodations for disabilities"
+              ]
+            },
+            {
+              "step": "Action",
+              "timeline": "Company must act on IC recommendations within 60 days of receipt of inquiry report",
+              "possible_actions": [
+                "Apology",
+                "Written warning",
+                "Suspension",
+                "Withholding promotion",
+                "Termination",
+                "Counseling",
+                "Sensitivity training"
+              ],
+              "appeal_process": "Either party may appeal to court within 90 days"
+            }
+          ],
+          "interim_relief": [
+            "Transfer of either party",
+            "Leave for complainant",
+            "Restraining orders",
+            "Work from home arrangements"
+          ],
+          "false_complaints": "Malicious false complaints may result in disciplinary action against complainant"
+        },
+        {
+          "subsection_number": "6.5",
+          "title": "Training and Awareness",
+          "mandatory_training": [
+            {
+              "audience": "All employees",
+              "frequency": "Annual",
+              "duration": "2 hours",
+              "format": ["Online modules", "In-person sessions", "Case studies"]
+            },
+            {
+              "audience": "Managers and team leads",
+              "frequency": "Semi-annual",
+              "duration": "4 hours",
+              "focus": ["Prevention", "Early intervention", "Response procedures"]
+            },
+            {
+              "audience": "New hires",
+              "timing": "Within first month",
+              "duration": "1 hour",
+              "content": ["Policy overview", "Reporting mechanisms", "Examples"]
+            }
+          ],
+          "awareness_campaigns": [
+            "Monthly newsletter articles",
+            "Posters in common areas",
+            "Email reminders quarterly",
+            "Annual POSH week with events",
+            "Testimonials (anonymous) shared"
+          ],
+          "metrics_tracking": [
+            "Training completion rates",
+            "Complaint statistics (anonymous)",
+            "Resolution timelines",
+            "Employee perception surveys"
+          ]
+        },
+        {
+          "subsection_number": "6.6",
+          "title": "Support Systems",
+          "counseling_services": [
+            "Professional counselors available",
+            "Confidential and free of charge",
+            "Up to 6 sessions per incident",
+            "Available for both complainant and respondent"
+          ],
+          "legal_assistance": [
+            "Legal consultation provided",
+            "Assistance with court proceedings if needed",
+            "Understanding rights and options"
+          ],
+          "employee_resource_groups": [
+            "Women's network for support",
+            "Ally networks for men supporting gender equality",
+            "LGBTQ+ support groups",
+            "Mentorship programs"
+          ],
+          "external_resources": [
+            "Local NGOs specializing in gender issues",
+            "Government helplines",
+            "Legal aid organizations"
+          ]
+        }
+      ]
+    },
+    
+    {
+      "section_number": "7",
+      "title": "Information Technology (IT) and Data Security",
+      "subsections": [
+        {
+          "subsection_number": "7.1",
+          "title": "Asset Management and Acceptable Use",
+          "ownership": "All laptops, mobiles, and accessories are property of Sony India",
+          "inventory_management": [
+            "Asset tagging and tracking",
+            "Regular audit of equipment",
+            "Lifecycle management (3-4 year refresh)",
+            "Disposal through certified e-waste handlers"
+          ],
+          "usage_policy": {
+            "business_use": "Primarily for business purposes",
+            "incidental_personal_use": "Permitted if it doesn't violate policies or consume excessive bandwidth",
+            "prohibited_uses": [
+              "Illegal activities",
+              "Harassment or discrimination",
+              "Commercial ventures",
+              "Gambling or gaming during work hours",
+              "Accessing inappropriate content"
+            ]
+          },
+          "prohibited_actions": [
+            "Removing, altering, or defacing trademarks or notices on software or hardware",
+            "Attempting to bypass security controls",
+            "Installing unauthorized hardware",
+            "Transferring equipment to unauthorized persons"
+          ],
+          "return_obligations": "Upon separation, all equipment must be returned in working condition"
+        },
+        {
+          "subsection_number": "7.2",
+          "title": "Software Installation and USB Policy",
+          "software_installation": {
+            "policy": "Employees generally do not have administrative rights; all software must be approved and installed by IT Support Team",
+            "approval_process": [
+              "Submit request through IT portal",
+              "Business justification required",
+              "Security review for new software",
+              "License compliance verification"
+            ],
+            "whitelisted_software": [
+              "Approved productivity tools",
+              "Business-specific applications",
+              "Security software mandated by IT"
+            ],
+            "blacklisted_categories": [
+              "File sharing (except approved corporate tools)",
+              "Remote access software (except approved VPN)",
+              "Cryptocurrency mining software",
+              "Unauthorized cloud storage"
+            ]
+          },
+          "usb_policy": {
+            "general_rule": "Use of USB mass storage devices is typically restricted or blocked",
+            "exceptions": [
+              "Approved encrypted USB drives",
+              "IT department for maintenance",
+              "Specific business needs with approval"
+            ],
+            "approval_process": "Exceptions require temporary approval from Manager and InfoSec",
+            "monitoring": "All USB usage logged and monitored",
+            "data_loss_prevention": "Sensitive data automatically blocked from copying to USB"
+          },
+          "mobile_device_management": [
+            "Company phones: Full MDM control",
+            "BYOD (Bring Your Own Device): Limited access with containerization",
+            "Remote wipe capability for lost/stolen devices",
+            "Minimum security requirements for personal devices accessing corporate data"
+          ]
+        },
+        {
+          "subsection_number": "7.3",
+          "title": "Confidential Information",
+          "classification_levels": [
+            {
+              "level": "Public",
+              "examples": ["Press releases", "Marketing material", "Annual reports"],
+              "handling": "Can be shared externally",
+              "marking": "No special marking required"
+            },
+            {
+              "level": "Internal Use",
+              "examples": ["Policies", "General memos", "Internal newsletters"],
+              "handling": "For employees only, not for external distribution",
+              "marking": "Marked \"Internal Use\""
+            },
+            {
+              "level": "Confidential",
+              "examples": ["Intellectual Property (IP)", "Unreleased product specs", "Customer data", "Employee PII"],
+              "handling": "Need-to-know basis, encrypted storage and transmission",
+              "marking": "Marked \"Confidential\"",
+              "access_controls": "Role-based access, logging of access"
+            },
+            {
+              "level": "Restricted",
+              "examples": ["Project source code", "Merger/acquisition details", "Security vulnerability data"],
+              "handling": "Strict access controls, air-gapped systems where possible",
+              "marking": "Marked \"Restricted\"",
+              "access_logging": "Detailed audit trails, two-person rule for access"
+            }
+          ],
+          "obligations": [
+            "Not sharing confidential information with unauthorized persons",
+            "Retaining personal data only as long as necessary",
+            "Following Clean Desk Policy: not leaving confidential documents unattended",
+            "Using approved encrypted channels for transmission",
+            "Reporting suspected breaches immediately"
+          ],
+          "data_retention": [
+            {
+              "data_type": "Employee records",
+              "retention_period": "7 years post-separation",
+              "disposal_method": "Secure shredding/erasure"
+            },
+            {
+              "data_type": "Financial records",
+              "retention_period": "10 years",
+              "disposal_method": "Secure shredding"
+            },
+            {
+              "data_type": "Project documentation",
+              "retention_period": "5 years post-project completion",
+              "disposal_method": "Digital erasure with verification"
+            }
+          ],
+          "clean_desk_policy": {
+            "requirements": [
+              "Lock computers when leaving desk",
+              "Secure physical documents in locked cabinets",
+              "Clear whiteboards after meetings",
+              "No sticky notes with passwords",
+              "Regular desk audits conducted"
+            ],
+            "enforcement": "Random checks by security team"
+          }
+        },
+        {
+          "subsection_number": "7.4",
+          "title": "VPN Responsibilities (Remote Work)",
+          "requirements": [
+            "Connection to internal servers must occur only via official Sony VPN client",
+            "VPN usage subjects employees to corporate monitoring",
+            "Logs maintained for 5 years as per Indian CERT-In directives (2022)",
+            "Using personal VPNs to bypass corporate firewalls is prohibited",
+            "Split tunneling disabled (all traffic routed through VPN)",
+            "Automatic disconnect after 30 minutes of inactivity"
+          ],
+          "security_measures": [
+            "Multi-factor authentication required",
+            "Regular password changes (90 days)",
+            "Device health checks before connection",
+            "Geolocation restrictions for sensitive access"
+          ],
+          "home_network_requirements": [
+            "WPA2/WPA3 encryption on home WiFi",
+            "Regular router firmware updates",
+            "No public WiFi for sensitive work",
+            "Separate network for work devices recommended"
+          ],
+          "monitoring_and_compliance": [
+            "Regular audits of VPN usage patterns",
+            "Alerting for suspicious connections",
+            "Compliance checks for connected devices",
+            "Automatic blocking of non-compliant devices"
+          ]
+        },
+        {
+          "subsection_number": "7.5",
+          "title": "Email and Communication Security",
+          "email_policy": [
+            "Company email for business purposes primarily",
+            "No auto-forwarding to personal accounts",
+            "Encryption required for sensitive attachments",
+            "Phishing awareness training mandatory"
+          ],
+          "instant_messaging": [
+            "Approved corporate messaging tools only",
+            "No sensitive data in unencrypted chats",
+            "Retention policies apply to business chats",
+            "Separate personal and professional chats"
+          ],
+          "social_media": [
+            "No disclosure of confidential information",
+            "Clear separation between personal and professional accounts",
+            "Representing Sony on social media requires approval",
+            "Respect copyright and confidentiality"
+          ],
+          "video_conferencing": [
+            "Password protection for all meetings",
+            "Waiting room feature enabled",
+            "Recording only with participant consent",
+            "Secure screen sharing settings"
+          ]
+        },
+        {
+          "subsection_number": "7.6",
+          "title": "Incident Response and Reporting",
+          "reportable_incidents": [
+            "Suspected data breaches",
+            "Lost or stolen devices",
+            "Malware infections",
+            "Unauthorized access attempts",
+            "Policy violations observed"
+          ],
+          "reporting_process": [
+            "Immediate report to IT Security team",
+            "24/7 security hotline available",
+            "Online incident reporting portal",
+            "Manager notification required"
+          ],
+          "response_protocol": [
+            "Containment of incident",
+            "Investigation and analysis",
+            "Remediation actions",
+            "Communication to affected parties",
+            "Legal and regulatory reporting if required"
+          ],
+          "breach_notification": [
+            "Internal stakeholders within 24 hours",
+            "Regulatory authorities as per legal requirements",
+            "Affected individuals where required by law",
+            "Public disclosure if material impact"
+          ]
+        }
+      ]
+    },
+    
+    {
+      "section_number": "8",
+      "title": "Physical Security, Surveillance, and Facilities",
+      "subsections": [
+        {
+          "subsection_number": "8.1",
+          "title": "Access Control and Tech Park Rules",
+          "id_badge": {
+            "requirement": "Must be worn and visible at all times within office premises",
+            "features": [
+              "Photo identification",
+              "Name and employee number",
+              "Department and access level indicators",
+              "Smart chip for door access"
+            ],
+            "replacement": "Report loss immediately, ₹500 replacement fee for negligence"
+          },
+          "visitor_procedures": [
+            {
+              "location": "Bagmane Tech Park",
+              "procedures": [
+                "Visitors deposit government-issued ID card at main security gate for visitor pass",
+                "Escort required at all times",
+                "Time-limited access (maximum 8 hours)",
+                "Log book maintenance for audit trail"
+              ]
+            },
+            {
+              "location": "Embassy Tech Village",
+              "procedures": [
+                "Similar strict security protocols including ID verification",
+                "Baggage screening through X-ray",
+                "Metal detector screening",
+                "Pre-registration preferred for large groups"
+              ]
+            }
+          ],
+          "delivery_procedures": [
+            "All deliveries received at security desk",
+            "Food deliveries: Employee must collect from security",
+            "Courier packages: Security screening before delivery",
+            "Hazardous materials: Special procedures apply"
+          ],
+          "after_hours_access": [
+            "Special approval required for access after 9:00 PM",
+            "Security escort available for late hours",
+            "Logging of after-hours access",
+            "Emergency contact information required"
+          ]
+        },
+        {
+          "subsection_number": "8.2",
+          "title": "Restricted Areas",
+          "areas": [
+            {
+              "area": "Server Rooms / Data Centers",
+              "access": "IT Infrastructure staff only",
+              "additional_controls": [
+                "Biometric access",
+                "Two-person rule for access",
+                "Temperature and humidity monitoring",
+                "24/7 CCTV surveillance"
+              ]
+            },
+            {
+              "area": "R&D Labs",
+              "access": "Assigned project engineers only",
+              "restrictions": [
+                "Mobile phones and cameras strictly prohibited",
+                "No external storage devices",
+                "Lab coats and safety gear required",
+                "Access logging with purpose"
+              ]
+            },
+            {
+              "area": "Finance and Treasury",
+              "access": "Finance department staff only",
+              "controls": [
+                "Secure document storage",
+                "Limited physical access",
+                "Visitor logs maintained",
+                "Dual control for sensitive operations"
+              ]
+            },
+            {
+              "area": "Executive Offices",
+              "access": "By appointment only",
+              "procedures": [
+                "Prior approval required",
+                "Security notification",
+                "Escort from reception",
+                "Limited time access"
+              ]
+            }
+          ],
+          "access_review": "Quarterly review of access permissions",
+          "temporary_access": "Can be granted with proper justification and approval"
+        },
+        {
+          "subsection_number": "8.3",
+          "title": "CCTV Surveillance",
+          "coverage": {
+            "monitored_areas": [
+              "Entrances and exits",
+              "Lobbies and reception",
+              "Corridors and stairwells",
+              "Cafeterias and pantries",
+              "Server room entries",
+              "Parking areas",
+              "Loading docks"
+            ],
+            "coverage_hours": "24/7 recording",
+            "retention_period": "90 days minimum"
+          },
+          "privacy_protections": [
+            "Not installed in restrooms",
+            "Not in changing rooms",
+            "Not in private wellness rooms",
+            "Not in prayer rooms",
+            "Not in nursing rooms"
+          ],
+          "data_usage": {
+            "primary_purpose": "For security investigations and incident response",
+            "access_controls": [
+              "Security team access only",
+              "Manager access with HR approval for specific incidents",
+              "Legal access for investigations",
+              "Regular access audits"
+            ],
+            "compliance": "Handled in accordance with Sony's privacy policy and data protection laws"
+          },
+          "signage": "Clear signage indicating CCTV surveillance in monitored areas"
+        },
+        {
+          "subsection_number": "8.4",
+          "title": "Family Members and \"Family Day\"",
+          "general_rule": "Family members not allowed inside operational work floors due to confidentiality agreements",
+          "exceptions": [
+            {
+              "situation": "Brief visits",
+              "conditions": [
+                "Allowed in non-secure zones (Reception, Cafeteria)",
+                "Prior manager approval required",
+                "Maximum 1 hour duration",
+                "Employee must escort at all times"
+              ]
+            },
+            {
+              "situation": "Medical emergencies",
+              "conditions": [
+                "Immediate family can wait in designated areas",
+                "Security discretion for emergencies",
+                "Minimal disruption to operations"
+              ]
+            }
+          ],
+          "family_day": {
+            "frequency": "Annual event",
+            "areas": "Designated tour areas only",
+            "restrictions": [
+              "Photography restricted to specific zones",
+              "No access to workstations",
+              "No photographing of screens or documents",
+              "Confidentiality agreements for adult family members"
+            ],
+            "activities": [
+              "Office tour of common areas",
+              "Product demonstrations",
+              "Children's activities",
+              "Meet-and-greet with team"
+            ]
+          },
+          "children_in_office": {
+            "policy": "Generally not permitted",
+            "emergency_exceptions": [
+              "School closures with notice",
+              "Childcare emergencies",
+              "Maximum one day with HR approval",
+              "Confined to designated areas"
+            ]
+          }
+        },
+        {
+          "subsection_number": "8.5",
+          "title": "Alcohol and Substance Abuse",
+          "general_rule": "Possession, consumption, or being under influence of alcohol/illegal drugs on premises is prohibited and grounds for immediate disciplinary action",
+          "workplace_impairment": [
+            "Any impairment affecting work performance is prohibited",
+            "Prescription medications affecting performance must be reported to HR",
+            "Reasonable accommodations considered for medical treatments"
+          ],
+          "events": {
+            "policy": "Alcohol may be served at official company events only with management authorization",
+            "conditions": [
+              "Events must be off-premises or in designated areas",
+              "Professional bartenders required",
+              "Non-alcoholic alternatives must be available",
+              "Transportation arrangements for impaired employees"
+            ]
+          },
+          "conduct": {
+            "rule": "Alcohol consumption does not excuse misconduct",
+            "specifics": [
+              "Harassment at parties treated with same severity as workplace misconduct",
+              "Professional behavior expected at all company events",
+              "Designated drivers/safe travel arrangements encouraged",
+              "Event organizers responsible for monitoring"
+            ]
+          },
+          "assistance_programs": [
+            "Employee Assistance Program for substance abuse",
+            "Confidential counseling available",
+            "Rehabilitation support with medical insurance",
+            "Return-to-work agreements after treatment"
+          ],
+          "testing_policy": {
+            "circumstances": [
+              "Reasonable suspicion",
+              "Post-accident investigation",
+              "Return from rehabilitation",
+              "Random testing for safety-sensitive positions"
+            ],
+            "process": [
+              "Medical review officer oversight",
+              "Chain of custody procedures",
+              "Confidential handling of results",
+              "Right to contest results"
+            ]
+          }
+        },
+        {
+          "subsection_number": "8.6",
+          "title": "Emergency Procedures",
+          "evacuation_procedures": [
+            {
+              "type": "Fire evacuation",
+              "procedure": [
+                "Sound alarm immediately",
+                "Use nearest exit",
+                "Assemble at designated assembly points",
+                "Do not use elevators",
+                "Fire wardens assist evacuation"
+              ]
+            },
+            {
+              "type": "Earthquake",
+              "procedure": [
+                "Drop, cover, and hold on",
+                "Evacuate after shaking stops",
+                "Watch for falling debris",
+                "Assemble at designated areas"
+              ]
+            },
+            {
+              "type": "Medical emergency",
+              "procedure": [
+                "Call security immediately",
+                "Do not move injured person unless in danger",
+                "First aid trained employees provide assistance",
+                "Clear path for emergency responders"
+              ]
+            }
+          ],
+          "emergency_contacts": [
+            "Security control room: Extension 911",
+            "Medical emergency: 108",
+            "Fire department: 101",
+            "Local police: 100"
+          ],
+          "first_aid": [
+            "Trained first-aiders on each floor",
+            "First aid kits in designated locations",
+            "AED (Automated External Defibrillator) available",
+            "Regular first aid training sessions"
+          ],
+          "drills": [
+            "Fire drills quarterly",
+            "Earthquake drills annually",
+            "First aid refreshers semi-annually",
+            "Security incident drills randomly"
+          ]
+        }
+      ]
+    },
+    
+    {
+      "section_number": "9",
+      "title": "Disciplinary Actions and Misconduct",
+      "subsections": [
+        {
+          "subsection_number": "9.1",
+          "title": "Classification of Misconduct",
+          "minor_misconduct": {
+            "definition": "Violations that are less serious but still unacceptable, usually addressed through counseling and warnings",
+            "examples": [
+              {
+                "misconduct": "Occasional late attendance",
+                "typical_response": "Verbal warning, then written warning"
+              },
+              {
+                "misconduct": "Negligence in wearing ID card",
+                "typical_response": "Reminder, replacement fee for repeated loss"
+              },
+              {
+                "misconduct": "Minor dress code violations",
+                "typical_response": "Verbal reminder, written warning for persistence"
+              },
+              {
+                "misconduct": "Uncleanliness of workstation",
+                "typical_response": "Notice to clean, escalation if hygiene issue"
+              },
+              {
+                "misconduct": "Excessive personal use of internet",
+                "typical_response": "Monitoring, restriction of access"
+              },
+              {
+                "misconduct": "Minor insubordination",
+                "typical_response": "Counseling session with HR"
+              }
+            ]
+          },
+          "major_misconduct": {
+            "definition": "Serious violations that may warrant suspension or termination",
+            "examples": [
+              {
+                "misconduct": "Theft or Fraud",
+                "description": "Misappropriation of company property or funds",
+                "potential_action": "Immediate suspension, police report, termination"
+              },
+              {
+                "misconduct": "Insubordination",
+                "description": "Willful refusal to follow legitimate instructions",
+                "potential_action": "Suspension pending investigation, possible termination"
+              },
+              {
+                "misconduct": "Harassment (sexual harassment, bullying, hostile work environment)",
+                "description": "Creating intimidating or offensive workplace",
+                "potential_action": "POSH committee investigation, possible termination"
+              },
+              {
+                "misconduct": "Data Breach (unauthorized sharing of credentials, IP theft, installing malicious software)",
+                "description": "Compromising company information security",
+                "potential_action": "Immediate suspension, forensic investigation, possible termination and legal action"
+              },
+              {
+                "misconduct": "Substance Abuse",
+                "description": "Being under influence at work or possession on premises",
+                "potential_action": "Suspension, mandatory counseling, possible termination"
+              },
+              {
+                "misconduct": "Absconding (absence without leave for more than 8 consecutive days)",
+                "description": "Unexplained absence without communication",
+                "potential_action": "Termination for abandonment of employment"
+              },
+              {
+                "misconduct": "Conflict of Interest violations",
+                "description": "Undisclosed conflicts affecting business decisions",
+                "potential_action": "Disciplinary action up to termination"
+              },
+              {
+                "misconduct": "Falsification of records",
+                "description": "Altering timesheets, expenses, or other records",
+                "potential_action": "Written warning to termination depending on severity"
+              }
+            ]
+          },
+          "gross_misconduct": {
+            "definition": "Extremely serious violations warranting immediate termination without notice",
+            "examples": [
+              "Physical violence or threats",
+              "Criminal activity on premises",
+              "Gross negligence causing significant loss",
+              "Willful damage to company property",
+              "Serious safety violations endangering others"
+            ]
+          }
+        },
+        {
+          "subsection_number": "9.2",
+          "title": "Disciplinary Procedure",
+          "principles": [
+            "Natural justice: Right to be heard",
+            "Proportionality: Punishment fitting the offense",
+            "Consistency: Similar treatment for similar offenses",
+            "Documentation: Proper records maintained",
+            "Confidentiality: Proceedings kept private"
+          ],
+          "steps": [
+            {
+              "step": "Initial Investigation",
+              "description": "Preliminary fact-finding to determine if formal proceedings required",
+              "timeline": "Within 3 working days of incident report",
+              "outcomes": [
+                "No case: Matter closed",
+                "Minor issue: Informal resolution",
+                "Serious issue: Proceed to show cause"
+              ]
+            },
+            {
+              "step": "Show Cause Notice",
+              "description": "Written notice detailing allegations; employee given 48-72 hours to explain",
+              "contents": [
+                "Clear statement of allegations",
+                "Relevant policy references",
+                "Timeframe for response",
+                "Consequences of non-response"
+              ],
+              "employee_rights": [
+                "Right to seek clarification",
+                "Right to consult colleague (not legal representative at this stage)",
+                "Right to extension with valid reason"
+              ]
+            },
+            {
+              "step": "Domestic Inquiry",
+              "description": "If explanation unsatisfactory, impartial Inquiry Officer appointed; employee given opportunity to present evidence and cross-examine witnesses",
+              "composition": [
+                "Inquiry Officer (manager from different department)",
+                "Management representative",
+                "Employee representative (nominated by employee)",
+                "HR representative (non-voting)"
+              ],
+              "procedures": [
+                "Notice of inquiry with date, time, venue",
+                "Right to present evidence and witnesses",
+                "Right to cross-examine management witnesses",
+                "Recording of proceedings",
+                "Inquiry report with findings and recommendations"
+              ],
+              "timeline": "Completion within 30 days of initiation"
+            },
+            {
+              "step": "Findings",
+              "description": "Inquiry Officer submits report concluding Guilty or Not Guilty",
+              "distribution": [
+                "Employee",
+                "HR department",
+                "Department head",
+                "Legal department (if required)"
+              ],
+              "appeal_process": "Employee may appeal within 7 days of receiving findings"
+            },
+            {
+              "step": "Punishment Decision",
+              "authority": "Department Head in consultation with HR",
+              "considerations": [
+                "Severity of misconduct",
+                "Employee's past record",
+                "Circumstances of the case",
+                "Precedents in similar cases",
+                "Potential for rehabilitation"
+              ]
+            },
+            {
+              "step": "Punishment Implementation",
+              "options": [
+                {
+                  "action": "Warning Letter",
+                  "applicability": "First-time minor offenses",
+                  "validity": "Typically 6-12 months in record"
+                },
+                {
+                  "action": "Suspension pending inquiry",
+                  "applicability": "Serious charges where continued presence may hamper investigation",
+                  "duration": "Up to 90 days, with or without pay depending on nature"
+                },
+                {
+                  "action": "Withholding Increment/Promotion",
+                  "applicability": "Performance-related negligence or misconduct",
+                  "duration": "Typically one appraisal cycle"
+                },
+                {
+                  "action": "Demotion",
+                  "applicability": "Serious misconduct but potential for continued employment",
+                  "conditions": "Clear performance improvement plan"
+                },
+                {
+                  "action": "Termination",
+                  "types": [
+                    "Termination for cause (immediate, no notice pay)",
+                    "Termination with notice (less serious cases)",
+                    "Constructive discharge (mutual separation)"
+                  ]
+                }
+              ]
+            }
+          ],
+          "appeals_process": {
+            "grounds_for_appeal": [
+              "Procedural irregularities",
+              "New evidence emerged",
+              "Punishment disproportionate to offense",
+              "Bias in proceedings"
+            ],
+            "appeal_authority": "Next level manager or Ethics Committee",
+            "timeline": "Appeal must be filed within 7 days of punishment notice",
+            "appeal_decision": "Final and binding, except for legal recourse"
+          }
+        },
+        {
+          "subsection_number": "9.3",
+          "title": "Progressive Discipline",
+          "concept": "System of escalating responses to repeated misconduct",
+          "typical_progression": [
+            {
+              "stage": "Verbal Warning",
+              "documentation": "Note in personal file",
+              "validity": "6 months",
+              "next_step": "Written warning if recurrence"
+            },
+            {
+              "stage": "Written Warning",
+              "documentation": "Formal letter, employee acknowledgment",
+              "validity": "12 months",
+              "next_step": "Final written warning"
+            },
+            {
+              "stage": "Final Written Warning",
+              "documentation": "Explicit notice that next offense may lead to termination",
+              "validity": "18-24 months",
+              "next_step": "Termination"
+            }
+          ],
+          "bypassing_progression": "Gross misconduct may bypass progressive discipline for immediate termination"
+        },
+        {
+          "subsection_number": "9.4",
+          "title": "Records and Documentation",
+          "maintenance": [
+            "All disciplinary records maintained in confidential HR files",
+            "Separate from performance appraisal files",
+            "Access restricted to HR and relevant managers",
+            "Retention period: 7 years post-separation"
+          ],
+          "expungement": {
+            "conditions": [
+              "No further incidents during warning period",
+              "Positive performance during period",
+              "Manager recommendation",
+              "HR approval"
+            ],
+            "process": "Warning removed from active file, archived separately"
+          },
+          "references": {
+            "policy": "Sony provides factual employment references only",
+            "disciplinary_information": "Not disclosed in references without employee consent",
+            "legal_requirements": "Comply with legal requirements for disclosure"
+          }
+        }
+      ]
+    },
+    
+    {
+      "section_number": "10",
+      "title": "Health, Safety and Wellness",
+      "subsections": [
+        {
+          "subsection_number": "10.1",
+          "title": "Occupational Health and Safety",
+          "policy": "Sony is committed to providing a safe and healthy work environment for all employees",
+          "responsibilities": [
+            {
+              "stakeholder": "Management",
+              "responsibilities": [
+                "Provide safe working conditions",
+                "Ensure compliance with safety regulations",
+                "Allocate resources for safety measures",
+                "Investigate accidents and incidents"
+              ]
+            },
+            {
+              "stakeholder": "Employees",
+              "responsibilities": [
+                "Follow safety procedures",
+                "Use protective equipment when required",
+                "Report unsafe conditions",
+                "Participate in safety training"
+              ]
+            },
+            {
+              "stakeholder": "Safety Committee",
+              "composition": [
+                "Representatives from management",
+                "Employee representatives",
+                "Safety officer",
+                "Medical representative"
+              ],
+              "meeting_frequency": "Monthly"
+            }
+          ],
+          "ergonomics": [
+            "Ergonomic assessments available",
+            "Adjustable chairs and desks provided",
+            "Monitor arms and keyboard trays available",
+            "Regular breaks encouraged",
+            "Eye tests subsidized annually"
+          ],
+          "first_aid": [
+            "Trained first-aiders on each floor",
+            "First aid kits regularly replenished",
+            "AED devices in common areas",
+            "Emergency response team"
+          ]
+        },
+        {
+          "subsection_number": "10.2",
+          "title": "Mental Health and Wellbeing",
+          "approach": "Holistic approach to employee wellbeing encompassing mental, emotional, and social health",
+          "employee_assistance_program": {
+            "services": [
+              "Confidential counseling (6 sessions per issue)",
+              "Stress management workshops",
+              "Financial counseling",
+              "Legal consultation",
+              "Parenting and relationship support"
+            ],
+            "access": "24/7 helpline, online portal, in-person sessions",
+            "confidentiality": "Complete confidentiality maintained"
+          },
+          "work_life_balance_initiatives": [
+            "Flexible working hours",
+            "Remote work options",
+            "Meeting-free Fridays (afternoon)",
+            "No-email weekends policy",
+            "Vacation encouragement and tracking"
+          ],
+          "stress_management": [
+            "Mindfulness and meditation sessions",
+            "Yoga classes on premises",
+            "Stress awareness training",
+            "Manager training on recognizing stress"
+          ],
+          "burnout_prevention": [
+            "Realistic workload planning",
+            "Regular check-ins on workload",
+            "Encouragement to take breaks",
+            "Monitoring of overtime patterns"
+          ]
+        },
+        {
+          "subsection_number": "10.3",
+          "title": "Physical Wellness Programs",
+          "fitness_facilities": [
+            "On-site gym with trainer",
+            "Yoga studio",
+            "Walking tracks in tech park",
+            "Cycling racks and showers"
+          ],
+          "health_initiatives": [
+            "Annual health check-ups",
+            "Vaccination drives",
+            "Health awareness campaigns",
+            "Nutrition counseling",
+            "Smoking cessation programs"
+          ],
+          "preventive_care": [
+            "Ergonomic workstation assessments",
+            "Eye care camps",
+            "Dental check-up camps",
+            "Health screenings for common conditions"
+          ]
+        },
+        {
+          "subsection_number": "10.4",
+          "title": "Social and Community Wellbeing",
+          "employee_resource_groups": [
+            {
+              "group": "Women's Network",
+              "activities": ["Mentoring", "Skill development", "Networking events"]
+            },
+            {
+              "group": "Parents Network",
+              "activities": ["Parenting workshops", "Childcare resources", "Flexibility advocacy"]
+            },
+            {
+              "group": "Cultural Networks",
+              "activities": ["Festival celebrations", "Cultural awareness", "Language exchange"]
+            },
+            {
+              "group": "Sports and Recreation Clubs",
+              "activities": ["Cricket team", "Badminton", "Running club", "Board games"]
+            }
+          ],
+          "community_engagement": [
+            "Volunteer time off (3 days per year)",
+            "CSR initiatives",
+            "Blood donation drives",
+            "Community service projects"
+          ],
+          "social_events": [
+            "Team offsites quarterly",
+            "Festival celebrations",
+            "Annual day event",
+            "Sports tournaments"
+          ]
+        }
+      ]
+    },
+    
+    {
+      "section_number": "11",
+      "title": "Performance Management and Career Development",
+      "subsections": [
+        {
+          "subsection_number": "11.1",
+          "title": "Performance Management System",
+          "cycle": "Annual performance cycle with quarterly check-ins",
+          "philosophy": "Continuous feedback and development-focused approach",
+          "components": [
+            {
+              "component": "Goal Setting",
+              "timing": "Beginning of performance year",
+              "process": [
+                "Alignment with team and organizational goals",
+                "SMART criteria (Specific, Measurable, Achievable, Relevant, Time-bound)",
+                "Manager-employee discussion and agreement",
+                "Documentation in performance system"
+              ]
+            },
+            {
+              "component": "Quarterly Check-ins",
+              "purpose": "Progress review, course correction, support identification",
+              "format": "Structured conversation focusing on achievements, challenges, and development"
+            },
+            {
+              "component": "Mid-year Review",
+              "timing": "June-July",
+              "focus": "Progress against goals, development plan updates",
+              "outcome": "Updated goals if business priorities changed"
+            },
+            {
+              "component": "Annual Appraisal",
+              "timing": "January-February",
+              "process": [
+                "Self-assessment",
+                "Manager assessment",
+                "360-degree feedback for certain roles",
+                "Calibration sessions across teams",
+                "Final rating and feedback discussion"
+              ]
+            }
+          ],
+          "rating_scale": {
+            "scale": "1-5 with descriptions",
+            "distribution_guidelines": [
+              "1: Needs Improvement (0-5%)",
+              "2: Partially Meets Expectations (10-15%)",
+              "3: Meets Expectations (60-70%)",
+              "4: Exceeds Expectations (15-20%)",
+              "5: Outstanding (5-10%)"
+            ],
+            "calibration": "Ratings calibrated across departments for consistency"
+          }
+        },
+        {
+          "subsection_number": "11.2",
+          "title": "Feedback Culture",
+          "principles": [
+            "Timely: Given close to the event",
+            "Specific: Based on observable behaviors",
+            "Actionable: Suggests improvements",
+            "Balanced: Both strengths and areas for development",
+            "Respectful: Delivered constructively"
+          ],
+          "feedback_channels": [
+            "Manager one-on-ones",
+            "Peer feedback",
+            "Skip-level meetings",
+            "360-degree feedback for leaders",
+            "Real-time feedback tools"
+          ],
+          "receiving_feedback": [
+            "Active listening without defensiveness",
+            "Seeking clarification if needed",
+            "Expressing appreciation",
+            "Developing action plans based on feedback"
+          ]
+        },
+        {
+          "subsection_number": "11.3",
+          "title": "Development Planning",
+          "individual_development_plans": {
+            "purpose": "Bridge between current capabilities and future role requirements",
+            "components": [
+              "Career aspirations",
+              "Skill gaps identified",
+              "Development activities",
+              "Timelines and success measures",
+              "Support needed from organization"
+            ],
+            "review_frequency": "Quarterly with manager"
+          },
+          "development_opportunities": [
+            {
+              "type": "Training Programs",
+              "examples": ["Technical skills", "Leadership development", "Soft skills", "Compliance training"]
+            },
+            {
+              "type": "Stretch Assignments",
+              "examples": ["Cross-functional projects", "Task forces", "Special initiatives", "Mentoring roles"]
+            },
+            {
+              "type": "Job Rotations",
+              "examples": ["Inter-department transfers", "International assignments", "Shadowing opportunities"]
+            },
+            {
+              "type": "Coaching and Mentoring",
+              "examples": ["Formal mentoring program", "Executive coaching", "Peer coaching circles"]
+            }
+          ],
+          "learning_budget": "₹25,000 per employee per year for external courses and certifications",
+          "time_for_learning": "10% of work time (approximately 4 hours per week) encouraged for learning activities"
+        },
+        {
+          "subsection_number": "11.4",
+          "title": "Career Progression",
+          "career_paths": [
+            {
+              "path": "Individual Contributor",
+              "levels": [
+                "Associate",
+                "Senior Associate",
+                "Specialist",
+                "Senior Specialist",
+                "Principal/Architect",
+                "Distinguished Engineer"
+              ]
+            },
+            {
+              "path": "Management",
+              "levels": [
+                "Team Lead",
+                "Manager",
+                "Senior Manager",
+                "Director",
+                "Vice President",
+                "Senior Vice President"
+              ]
+            },
+            {
+              "path": "Project Management",
+              "levels": [
+                "Project Coordinator",
+                "Project Manager",
+                "Senior Project Manager",
+                "Program Manager",
+                "Portfolio Manager"
+              ]
+            }
+          ],
+          "promotion_criteria": [
+            "Consistent high performance",
+            "Readiness for next level",
+            "Business need for role",
+            "Demonstrated competencies for target level",
+            "Manager recommendation"
+          ],
+          "promotion_cycle": "Twice yearly (April and October) with exceptions for critical needs",
+          "lateral_moves": "Encouraged for skill diversification and organizational flexibility"
+        },
+        {
+          "subsection_number": "11.5",
+          "title": "Succession Planning",
+          "purpose": "Identify and develop future leaders for key positions",
+          "process": [
+            "Identification of critical roles",
+            "Assessment of potential successors",
+            "Development plans for high-potential employees",
+            "Regular review and updates",
+            "Emergency succession plans for all key roles"
+          ],
+          "high_potential_program": {
+            "identification": "Annual talent review process",
+            "development": [
+              "Accelerated development programs",
+              "Executive exposure",
+              "Strategic projects",
+              "External leadership programs"
+            ],
+            "retention": "Customized career plans, competitive compensation, meaningful work"
+          }
+        }
+      ]
+    },
+    
+    {
+      "section_number": "12",
+      "title": "Compensation and Benefits",
+      "subsections": [
+        {
+          "subsection_number": "12.1",
+          "title": "Compensation Philosophy",
+          "principles": [
+            "External competitiveness: Match or exceed market rates for similar roles",
+            "Internal equity: Fairness across similar roles and levels",
+            "Performance linkage: Differentiate rewards based on contribution",
+            "Total rewards approach: Holistic view of compensation and benefits",
+            "Compliance: Adherence to all statutory requirements"
+          ],
+          "salary_benchmarking": [
+            "Annual market surveys participation",
+            "Industry-specific data analysis",
+            "Geographic adjustments for different locations",
+            "Regular review of compensation structures"
+          ],
+          "pay_transparency": [
+            "Clear communication of compensation structure",
+            "Understanding of how pay decisions are made",
+            "Confidentiality of individual compensation details",
+            "Process for compensation inquiries"
+          ]
+        },
+        {
+          "subsection_number": "12.2",
+          "title": "Salary Structure",
+          "components": [
+            {
+              "component": "Fixed Compensation",
+              "elements": [
+                "Basic Salary (40-50% of CTC)",
+                "House Rent Allowance (HRA)",
+                "Special Allowance",
+                "Other fixed allowances"
+              ],
+              "characteristics": "Guaranteed, subject to statutory deductions"
+            },
+            {
+              "component": "Variable Compensation",
+              "elements": [
+                "Annual Performance Bonus",
+                "Sales Commission (for sales roles)",
+                "Project Completion Bonus",
+                "Spot Awards"
+              ],
+              "characteristics": "Performance-linked, discretionary within guidelines"
+            },
+            {
+              "component": "Benefits and Perquisites",
+              "elements": [
+                "Provident Fund (EPF)",
+                "Gratuity",
+                "Medical Insurance",
+                "Life Insurance",
+                "Retiral benefits"
+              ]
+            }
+          ],
+          "pay_grades": "Structured pay bands for each role level with min, mid, and max points",
+          "salary_review_cycle": "Annual review effective April 1st, with off-cycle adjustments for promotions/market corrections"
+        },
+        {
+          "subsection_number": "12.3",
+          "title": "Bonus and Incentive Programs",
+          "annual_bonus": {
+            "eligibility": "Employees completing minimum 6 months in fiscal year",
+            "calculation": "Based on company performance, department performance, and individual performance",
+            "payout_timing": "May-June following fiscal year end",
+            "deferral": "Senior management may have deferred components"
+          },
+          "spot_awards": {
+            "purpose": "Recognize exceptional contributions outside normal job duties",
+            "value_range": "₹5,000 - ₹50,000",
+            "approval_process": "Manager nomination with department head approval",
+            "frequency": "Throughout the year as deserving situations arise"
+          },
+          "retention_bonus": {
+            "purpose": "Retain critical talent in key roles or projects",
+            "structure": "Lump sum or staggered payments tied to continued employment",
+            "clawback": "Repayment required if employment ends before agreed period"
+          },
+          "referral_bonus": {
+            "amount": "₹50,000 - ₹1,00,000 depending on role level",
+            "payout": "50% on joining, 50% after 6 months successful completion",
+            "eligibility": "All employees except HR and hiring managers for specific position"
+          }
+        },
+        {
+          "subsection_number": "12.4",
+          "title": "Employee Benefits",
+          "health_insurance": {
+            "coverage": "Employee + spouse + 2 children + parents (optional)",
+            "sum_insured": "₹5,00,000 per family per year",
+            "features": [
+              "Cashless hospitalization",
+              "Pre and post hospitalization coverage",
+              "Day care procedures",
+              "Maternity coverage",
+              "Critical illness cover"
+            ],
+            "premium": "100% paid by company for employee, optional top-up available"
+          },
+          "life_insurance": {
+            "coverage": "3 times annual CTC, minimum ₹50,00,000",
+            "beneficiary": "Nominee designated by employee",
+            "accidental_death": "Additional equal coverage",
+            "premium": "100% paid by company"
+          },
+          "provident_fund": {
+            "contribution": "Employee: 12% of basic salary, Employer: 12% of basic salary",
+            "withdrawal": "Tax-free on completion of 5 years continuous service",
+            "loan_facility": "Available for specific purposes per EPFO rules"
+          },
+          "gratuity": {
+            "eligibility": "5 years continuous service",
+            "calculation": "15 days salary for each completed year of service",
+            "ceiling": "As per Payment of Gratuity Act"
+          },
+          "superannuation": {
+            "purpose": "Additional retirement savings",
+            "contribution": "Company contributes up to 15% of basic salary",
+            "vesting": "Immediate vesting",
+            "withdrawal_options": "At retirement or upon leaving"
+          }
+        },
+        {
+          "subsection_number": "12.5",
+          "title": "Perquisites and Allowances",
+          "transportation": [
+            "Cab facility for shifts outside normal hours",
+            "Fuel reimbursement for two-wheelers: ₹2,000 per month",
+            "Car lease option for managerial roles"
+          ],
+          "communication": [
+            "Mobile phone reimbursement: ₹1,500 per month",
+            "Internet reimbursement for remote work: ₹1,000 per month",
+            "Corporate mobile plans available"
+          ],
+          "professional_development": [
+            "Certification reimbursement: Up to ₹50,000 per year",
+            "Conference attendance support",
+            "Professional membership fees"
+          ],
+          "wellness": [
+            "Gym membership subsidy: ₹5,000 per year",
+            "Annual health check-up",
+            "Mental wellness app subscriptions"
+          ]
+        },
+        {
+          "subsection_number": "12.6",
+          "title": "Taxation and Compliance",
+          "tax_deductions": [
+            "Professional tax as per state regulations",
+            "Income tax as per IT Act",
+            "TDS certificates provided quarterly",
+            "Tax filing assistance available"
+          ],
+          "form_16": "Issued by June 15th each year",
+          "investment_declaration": "Annual process for tax-saving investments",
+          "reimbursement_process": [
+            "Monthly submission of claims",
+            "Supporting documentation required",
+            "Approval by manager",
+            "Payment in following month's salary"
+          ]
+        }
+      ]
+    },
+    
+    {
+      "section_number": "13",
+      "title": "Learning and Development",
+      "subsections": [
+        {
+          "subsection_number": "13.1",
+          "title": "Learning Philosophy",
+          "principles": [
+            "Continuous learning is essential for growth",
+            "Learning happens through multiple channels",
+            "Employees own their development",
+            "Organization provides resources and opportunities",
+            "Learning aligned with business needs"
+          ],
+          "70_20_10_model": {
+            "on_the_job": "70% of learning through challenging assignments",
+            "social_learning": "20% through interactions with others",
+            "formal_training": "10% through structured programs"
+          }
+        },
+        {
+          "subsection_number": "13.2",
+          "title": "Learning Platforms and Resources",
+          "learning_management_system": {
+            "name": "Sony LearnHub",
+            "features": [
+              "Course catalog with 5000+ courses",
+              "Mobile app access",
+              "Progress tracking",
+              "Certification management",
+              "Recommendation engine"
+            ],
+            "content_areas": [
+              "Technical skills",
+              "Leadership development",
+              "Compliance training",
+              "Soft skills",
+              "Industry knowledge"
+            ]
+          },
+          "digital_library": [
+            "Access to technical journals",
+            "E-books and audiobooks",
+            "Video tutorials",
+            "Case studies",
+            "Research papers"
+          ],
+          "learning_labs": [
+            "Hands-on technical labs",
+            "Simulation environments",
+            "Sandbox for experimentation",
+            "Collaborative learning spaces"
+          ]
+        },
+        {
+          "subsection_number": "13.3",
+          "title": "Training Programs",
+          "mandatory_training": [
+            {
+              "program": "New Hire Orientation",
+              "duration": "2 days",
+              "content": ["Company culture", "Policies", "Systems", "Team integration"]
+            },
+            {
+              "program": "Compliance Training",
+              "frequency": "Annual",
+              "topics": ["Code of Conduct", "POSH", "Information Security", "Anti-Bribery"]
+            },
+            {
+              "program": "Manager Excellence",
+              "audience": "New managers",
+              "duration": "3 days",
+              "topics": ["People management", "Performance coaching", "Conflict resolution"]
+            }
+          ],
+          "technical_training": [
+            "Technology certification programs",
+            "Architecture bootcamps",
+            "Agile and DevOps workshops",
+            "Emerging technology sessions"
+          ],
+          "leadership_development": [
+            "High Potential Program",
+            "Executive Leadership Program",
+            "Mentoring for leaders",
+            "Strategic thinking workshops"
+          ],
+          "soft_skills": [
+            "Communication skills",
+            "Presentation skills",
+            "Time management",
+            "Emotional intelligence",
+            "Critical thinking"
+          ]
+        },
+        {
+          "subsection_number": "13.4",
+          "title": "Mentoring and Coaching",
+          "formal_mentoring_program": {
+            "purpose": "Career guidance and organizational knowledge transfer",
+            "matching": "Based on career goals, experience, and compatibility",
+            "duration": "6-12 months",
+            "structure": "Regular meetings, goal setting, progress tracking"
+          },
+          "executive_coaching": {
+            "eligibility": "Senior leaders and high potentials",
+            "duration": "6 months typically",
+            "focus": "Leadership challenges, career transitions, skill enhancement"
+          },
+          "peer_coaching": {
+            "format": "Small groups meeting regularly",
+            "focus": "Skill sharing, problem solving, mutual support",
+            "facilitation": "Trained peer coaches"
+          },
+          "reverse_mentoring": {
+            "concept": "Junior employees mentor senior leaders on new trends",
+            "topics": ["Digital native perspectives", "New technologies", "Youth market insights"]
+          }
+        },
+        {
+          "subsection_number": "13.5",
+          "title": "External Learning Support",
+          "tuition_assistance": {
+            "eligibility": "Employees with 1+ year tenure",
+            "coverage": "Up to 50% of tuition fees, maximum ₹2,00,000 per year",
+            "conditions": [
+              "Relevance to current or future role",
+              "Maintain minimum performance rating",
+              "Service commitment after completion"
+            ]
+          },
+          "certification_reimbursement": {
+            "coverage": "100% of exam fees for pre-approved certifications",
+            "bonus": "One-time award for achieving difficult certifications",
+            "recognition": "Certification achievement celebrated"
+          },
+          "conference_attendance": {
+            "budget": "Departmental budgets for relevant conferences",
+            "selection": "Based on relevance and learning potential",
+            "sharing": "Attendees required to share learnings with team"
+          }
+        },
+        {
+          "subsection_number": "13.6",
+          "title": "Knowledge Management",
+          "communities_of_practice": [
+            {
+              "community": "Technology Guilds",
+              "purpose": "Share best practices within technology domains",
+              "activities": ["Brown bag sessions", "Code reviews", "Architecture discussions"]
+            },
+            {
+              "community": "Functional Networks",
+              "purpose": "Connect professionals in same function across teams",
+              "activities": ["Process improvements", "Skill building", "Problem solving"]
+            }
+          ],
+          "knowledge_repositories": [
+            "Project documentation library",
+            "Lessons learned database",
+            "Best practices wiki",
+            "Solution patterns catalog"
+          ],
+          "knowledge_sharing_culture": [
+            "Recognition for knowledge contributions",
+            "Time allocated for sharing activities",
+            "Easy-to-use sharing platforms",
+            "Psychological safety for asking questions"
+          ]
+        }
+      ]
+    },
+    
+    {
+      "section_number": "14",
+      "title": "Global Mobility and International Assignments",
+      "subsections": [
+        {
+          "subsection_number": "14.1",
+          "title": "Types of International Assignments",
+          "categories": [
+            {
+              "type": "Short-term Assignment",
+              "duration": "3-12 months",
+              "purpose": ["Project support", "Skill transfer", "Temporary coverage"],
+              "compensation": "Home country salary plus allowances"
+            },
+            {
+              "type": "Long-term Assignment",
+              "duration": "1-3 years",
+              "purpose": ["Leadership development", "Knowledge transfer", "Market expansion"],
+              "compensation": "Host country salary structure or balance sheet approach"
+            },
+            {
+              "type": "Permanent Transfer",
+              "purpose": "Relocation to another country permanently",
+              "compensation": "Full conversion to host country compensation",
+              "considerations": "Immigration, tax, social security implications"
+            },
+            {
+              "type": "International Commuter",
+              "arrangement": "Employee works in multiple countries regularly",
+              "compensation": "Complex arrangement considering time in each location"
+            }
+          ]
+        },
+        {
+          "subsection_number": "14.2",
+          "title": "Eligibility and Selection",
+          "eligibility_criteria": [
+            "Minimum 2 years with Sony",
+            "Consistent performance rating of 4 or above",
+            "Role suitability and skills match",
+            "Manager recommendation",
+            "Willingness to relocate"
+          ],
+          "selection_process": [
+            "Identification of need by business",
+            "Internal job posting",
+            "Screening by HR and hiring manager",
+            "Interviews including cross-cultural assessment",
+            "Final approval by assignment committee"
+          ],
+          "family_considerations": [
+            "Spouse employment assistance",
+            "Children education support",
+            "Family cultural orientation",
+            "Dual-career support programs"
+          ]
+        },
+        {
+          "subsection_number": "14.3",
+          "title": "Compensation and Benefits on Assignment",
+          "balance_sheet_approach": {
+            "concept": "Maintain home country purchasing power while complying with host country norms",
+            "components": [
+              "Base salary adjustment",
+              "Cost of living allowance",
+              "Housing allowance",
+              "Education allowance for children",
+              "Tax equalization"
+            ]
+          },
+          "relocation_benefits": [
+            "Moving of household goods",
+            "Temporary accommodation (1-3 months)",
+            "Settling-in allowance",
+            "Home finding assistance",
+            "Cultural orientation training"
+          ],
+          "tax_equalization": {
+            "purpose": "Employee pays no more tax than in home country",
+            "process": [
+              "Hypothetical tax calculation",
+              "Actual tax filing assistance",
+              "Reconciliation process",
+              "Year-end true-up"
+            ]
+          }
+        },
+        {
+          "subsection_number": "14.4",
+          "title": "Repatriation and Career Progression",
+          "repatriation_process": [
+            "Planning begins 6 months before assignment end",
+            "Role identification in home country",
+            "Knowledge transfer planning",
+            "Reverse culture shock preparation"
+          ],
+          "career_impact": [
+            "International experience valued in promotions",
+            "Formal debriefing to share learnings",
+            "Mentoring for returned assignees",
+            "Utilization of international experience"
+          ],
+          "retention": "Retention bonus may be offered to retain returning assignees"
+        }
+      ]
+    },
+    
+    {
+      "section_number": "15",
+      "title": "Sustainability and Corporate Social Responsibility",
+      "subsections": [
+        {
+          "subsection_number": "15.1",
+          "title": "Environmental Sustainability",
+          "goals": [
+            "Carbon neutral operations by 2030",
+            "Zero waste to landfill by 2025",
+            "100% renewable energy by 2030",
+            "Water positive by 2040"
+          ],
+          "office_environment_initiatives": [
+            "LED lighting throughout facilities",
+            "Smart building management systems",
+            "Water recycling systems",
+            "Waste segregation and recycling",
+            "Electric vehicle charging stations"
+          ],
+          "employee_engagement": [
+            "Green champions network",
+            "Sustainability training",
+            "Carbon footprint tracking for business travel",
+            "Paperless office initiatives",
+            "Sustainable commuting programs"
+          ],
+          "supply_chain_sustainability": [
+            "Supplier code of conduct with environmental standards",
+            "Sustainable procurement policies",
+            "Life cycle assessment for products",
+            "Packaging reduction initiatives"
+          ]
+        },
+        {
+          "subsection_number": "15.2",
+          "title": "Social Responsibility",
+          "community_engagement": [
+            "Volunteer time off (3 days per year paid)",
+            "Employee donation matching program",
+            "Skills-based volunteering",
+            "Community partnership projects"
+          ],
+          "education_initiatives": [
+            "STEM education programs in local schools",
+            "Digital literacy programs",
+            "University partnerships and research collaborations",
+            "Scholarships for underprivileged students"
+          ],
+          "diversity_and_inclusion": [
+            "Supplier diversity program",
+            "Accessibility initiatives",
+            "Inclusive hiring practices",
+            "Equal opportunity employer commitment"
+          ]
+        },
+        {
+          "subsection_number": "15.3",
+          "title": "Economic Responsibility",
+          "ethical_business_practices": [
+            "Transparent reporting",
+            "Fair tax practices",
+            "Anti-corruption compliance",
+            "Responsible marketing"
+          ],
+          "local_economic_development": [
+            "Local hiring preferences",
+            "Support for local suppliers",
+            "Skill development for local communities",
+            "Economic impact assessments"
+          ],
+          "responsible_innovation": [
+            "Ethical AI principles",
+            "Privacy by design",
+            "Product safety and quality",
+            "Sustainable product design"
+          ]
+        },
+        {
+          "subsection_number": "15.4",
+          "title": "Employee Participation",
+          "csr_committee": [
+            "Employee representatives from all levels",
+            "Quarterly meetings",
+            "Budget allocation for employee-led initiatives",
+            "Impact measurement and reporting"
+          ],
+          "suggestion_scheme": "Employees can propose sustainability initiatives",
+          "recognition": "Sustainability awards for innovative ideas and contributions",
+          "reporting": "Annual sustainability report with employee contributions highlighted"
+        }
+      ]
+    },
+    
+    {
+      "section_number": "16",
+      "title": "Business Continuity and Disaster Recovery",
+      "subsections": [
+        {
+          "subsection_number": "16.1",
+          "title": "Business Continuity Management",
+          "policy": "Sony is committed to maintaining critical business operations during disruptions",
+          "scope": "Covers all critical business functions across locations",
+          "business_impact_analysis": [
+            "Identification of critical functions",
+            "Recovery time objectives (RTO)",
+            "Recovery point objectives (RPO)",
+            "Maximum tolerable downtime"
+          ],
+          "crisis_management_team": [
+            "Core team identified with alternates",
+            "Clear roles and responsibilities",
+            "Communication protocols",
+            "Decision-making authority"
+          ]
+        },
+        {
+          "subsection_number": "16.2",
+          "title": "Disaster Recovery Planning",
+          "it_disaster_recovery": [
+            "Data backup strategies",
+            "Alternative data center locations",
+            "Network redundancy",
+            "Application recovery priorities"
+          ],
+          "workplace_recovery": [
+            "Alternative office locations",
+            "Work from home capabilities",
+            "Mobile workforce support",
+            "Equipment redundancy"
+          ],
+          "supply_chain_resilience": [
+            "Alternative supplier identification",
+            "Inventory strategies",
+            "Logistics alternatives",
+            "Supplier risk assessment"
+          ]
+        },
+        {
+          "subsection_number": "16.3",
+          "title": "Testing and Maintenance",
+          "testing_schedule": [
+            "Tabletop exercises quarterly",
+            "Functional testing annually",
+            "Full-scale testing biennially",
+            "Unannounced testing occasionally"
+          ],
+          "plan_maintenance": [
+            "Annual review of all plans",
+            "Updates after organizational changes",
+            "Updates after technology changes",
+            "Updates after lessons learned from incidents"
+          ],
+          "training": [
+            "Awareness training for all employees",
+            "Role-specific training for crisis team members",
+            "New hire orientation includes BCP awareness",
+            "Refresher training annually"
+          ]
+        }
+      ]
+    },
+    
+    {
+      "section_number": "17",
+      "title": "Technology Innovation and Digital Transformation",
+      "subsections": [
+        {
+          "subsection_number": "17.1",
+          "title": "Innovation Culture",
+          "principles": [
+            "Encourage experimentation and calculated risk-taking",
+            "Learn from failures without blame",
+            "Cross-pollination of ideas across teams",
+            "Customer-centric innovation focus",
+            "Speed to market balanced with quality"
+          ],
+          "innovation_framework": [
+            "Idea generation platforms",
+            "Innovation challenges and hackathons",
+            "Proof-of-concept funding",
+            "Stage-gate process for project selection",
+            "Metrics for innovation success"
+          ]
+        },
+        {
+          "subsection_number": "17.2",
+          "title": "Digital Workplace",
+          "tools_and_platforms": [
+            "Unified communication and collaboration tools",
+            "Digital workflow automation",
+            "AI-powered productivity assistants",
+            "Virtual reality for training and collaboration",
+            "IoT for workplace optimization"
+          ],
+          "change_management": [
+            "Digital literacy programs",
+            "Change champions network",
+            "Phased rollouts with feedback loops",
+            "Support and training for new tools",
+            "Measuring adoption and impact"
+          ]
+        },
+        {
+          "subsection_number": "17.3",
+          "title": "Future Skills Development",
+          "skills_forecasting": [
+            "Regular analysis of emerging skill needs",
+            "Partnership with educational institutions",
+            "Internal skills inventory and gap analysis",
+            "Personalized learning pathways"
+          ],
+          "emerging_technology_training": [
+            "AI and machine learning",
+            "Blockchain fundamentals",
+            "Internet of Things",
+            "Cybersecurity",
+            "Quantum computing awareness"
+          ],
+          "reskilling_programs": [
+            "Career transition support",
+            "Full-time training programs for high-demand skills",
+            "Part-time learning options",
+            "Recognition for skill acquisition"
+          ]
+        }
+      ]
+    },
+    
+    {
+      "section_number": "18",
+      "title": "Employee Relations and Engagement",
+      "subsections": [
+        {
+          "subsection_number": "18.1",
+          "title": "Communication Channels",
+          "downward_communication": [
+            "All-hands meetings quarterly",
+            "Monthly leadership updates",
+            "Regular team meetings",
+            "Intranet news and updates",
+            "Email newsletters"
+          ],
+          "upward_communication": [
+            "Skip-level meetings",
+            "Employee surveys (quarterly pulse, annual engagement)",
+            "Suggestion boxes (physical and digital)",
+            "Open door policy with leaders",
+            "Town hall Q&A sessions"
+          ],
+          "horizontal_communication": [
+            "Cross-functional meetings",
+            "Community of practice forums",
+            "Social collaboration platforms",
+            "Informal networking events"
+          ]
+        },
+        {
+          "subsection_number": "18.2",
+          "title": "Employee Engagement",
+          "measurement": [
+            "Annual engagement survey with action planning",
+            "Quarterly pulse surveys",
+            "Exit interviews and analysis",
+            "Stay interviews for high performers",
+            "Focus groups on specific topics"
+          ],
+          "engagement_initiatives": [
+            "Recognition programs",
+            "Career development opportunities",
+            "Work-life balance programs",
+            "Inclusive culture building",
+            "Meaningful work assignments"
+          ],
+          "recognition_programs": [
+            "Service anniversary awards",
+            "Spot awards for exceptional work",
+            "Peer recognition platforms",
+            "Team achievement celebrations",
+            "Innovation awards"
+          ]
+        },
+        {
+          "subsection_number": "18.3",
+          "title": "Conflict Resolution",
+          "informal_resolution": [
+            "Direct conversation between parties",
+            "Facilitation by manager",
+            "HR mediation for interpersonal conflicts",
+            "Early intervention approach"
+          ],
+          "formal_grievance_procedure": {
+            "steps": [
+              "Written grievance submission to HR",
+              "Investigation by HR",
+              "Hearing with all parties",
+              "Decision by grievance committee",
+              "Appeal process if unsatisfied"
+            ],
+            "timelines": "Resolution within 30 days of submission",
+            "confidentiality": "All proceedings confidential"
+          },
+          "ombudsperson": {
+            "role": "Independent, confidential resource for conflict resolution",
+            "access": "Available to all employees",
+            "authority": "Facilitate resolutions, make recommendations, no disciplinary power"
+          }
+        }
+      ]
+    },
+    
+    {
+      "section_number": "19",
+      "title": "Vendor and Third-Party Management",
+      "subsections": [
+        {
+          "subsection_number": "19.1",
+          "title": "Vendor Selection and Onboarding",
+          "due_diligence": [
+            "Financial stability assessment",
+            "Compliance history check",
+            "References from other clients",
+            "Site visits for critical vendors",
+            "Background checks for key personnel"
+          ],
+          "contract_requirements": [
+            "Include Sony code of conduct",
+            "Data protection and confidentiality clauses",
+            "Right to audit provisions",
+            "Liability and indemnification terms",
+            "Termination clauses"
+          ],
+          "onboarding_process": [
+            "Security and compliance training",
+            "System access provisioning",
+            "Point of contact assignment",
+            "Performance expectations communication"
+          ]
+        },
+        {
+          "subsection_number": "19.2",
+          "title": "Ongoing Management",
+          "performance_monitoring": [
+            "Key performance indicators (KPIs)",
+            "Regular review meetings",
+            "Satisfaction surveys from internal users",
+            "Quality audits",
+            "Security compliance checks"
+          ],
+          "risk_management": [
+            "Regular risk assessments",
+            "Business continuity planning with vendors",
+            "Cybersecurity assessments",
+            "Financial health monitoring"
+          ],
+          "relationship_management": [
+            "Designated relationship managers",
+            "Joint planning sessions",
+            "Innovation collaboration",
+            "Conflict resolution processes"
+          ]
+        },
+        {
+          "subsection_number": "19.3",
+          "title": "Offboarding and Transition",
+          "exit_process": [
+            "Knowledge transfer requirements",
+            "Data and asset return",
+            "Access revocation",
+              "Final payment after compliance verification"
+            ]
+          }
+        ]
+      },
+
+      {
+        "section_number": "20",
+        "title": "Conclusion and Administration",
+        "subsections": [
+          {
+            "subsection_number": "20.1",
+            "title": "Policy Acknowledgment",
+            "requirement": "All employees must acknowledge receipt and understanding of this policy",
+            "process": [
+              "Digital acknowledgment via HR portal",
+              "Annual re-acknowledgment required",
+              "New employees must acknowledge within first week",
+              "Acknowledgement records maintained for audit purposes"
+            ],
+            "consequences_of_non_acknowledgment": "May result in restricted system access or disciplinary action"
+          },
+          {
+            "subsection_number": "20.2",
+            "title": "Interpretation and Authority",
+            "interpretation": "HR department has final authority on policy interpretation",
+            "exceptions": "Any exceptions to policy require written approval from Head of HR",
+            "conflicts": "Where this policy conflicts with local laws, local laws prevail",
+            "updates": "Policy updates will be communicated with 30 days notice where possible"
+          },
+          {
+            "subsection_number": "20.3",
+            "title": "Contact Information",
+            "primary_contacts": [
+              {
+                "department": "Human Resources",
+                "email": "hrhelp@sonyindia.com",
+                "phone": "080-XXXX-XXXX",
+                "hours": "9:00 AM - 6:00 PM, Monday-Friday"
+              },
+              {
+                "department": "Ethics & Compliance Office",
+                "email": "ethics@sonyindia.com",
+                "hotline": "1800-XXX-XXXX (24/7 toll-free)",
+                "website": "ethics.sonyindia.com"
+              },
+              {
+                "department": "IT Helpdesk",
+                "email": "ithelp@sonyindia.com",
+                "phone": "080-XXXX-XXXX ext. 1111",
+                "hours": "24/7 for critical issues"
+              }
+            ],
+            "escalation_path": "Unresolved issues may be escalated to next level manager or department head"
+          },
+          {
+            "subsection_number": "20.4",
+            "title": "Document Control",
+            "version_control": {
+              "current_version": "1.0",
+              "effective_date": "February 1, 2026",
+              "next_review_date": "January 31, 2027",
+              "change_history": "Maintained in document header"
+            },
+            "distribution": [
+              "All employees via HR portal",
+              "Managers receive detailed briefing",
+              "Available in multiple formats (PDF, online, mobile app)",
+              "Translations available for key sections"
+            ],
+            "archival": "Previous versions archived for 7 years"
+          }
+        ]
+      }
+    ],
+  
+  "works_cited": {
+    "references": [
+      {
+        "id": 1,
+        "citation": "Deposit your I-card to get a visitor's pass - Bangalore Mirror, accessed January 23, 2026"
+      },
+      {
+        "id": 2,
+        "citation": "Embassy TechVillage, accessed January 23, 2026"
+      },
+      {
+        "id": 3,
+        "citation": "SONY GROUP CODE OF CONDUCT, accessed January 23, 2026"
+      },
+      {
+        "id": 4,
+        "citation": "Sustainability Report 2023 Employees - Sony, accessed January 23, 2026"
+      },
+      {
+        "id": 5,
+        "citation": "What is POSH policy? What is POSH law? - Chengalpattu - cltri.gov.in, accessed January 23, 2026"
+      },
+      {
+        "id": 6,
+        "citation": "SONY GROUP CODE OF CONDUCT, accessed January 23, 2026"
+      },
+      {
+        "id": 7,
+        "citation": "Careers at Sony, accessed January 23, 2026"
+      },
+      {
+        "id": 8,
+        "citation": "2025 India POSH Policy - SEI, accessed January 23, 2026"
+      },
+      {
+        "id": 9,
+        "citation": "Anti - Sexual Harassment Policy - Sony Pictures Networks, accessed January 23, 2026"
+      },
+      {
+        "id": 10,
+        "citation": "POLICY ON PREVENTION OF SEXUAL HARASSMENT (POSH POLICY) OBJECTIVE NewSpace India Limited (NSIL), accessed January 23, 2026"
+      },
+      {
+        "id": 11,
+        "citation": "Code of conduct, accessed January 23, 2026"
+      },
+      {
+        "id": 12,
+        "citation": "Sony Supply Chain Code of Conduct 4.0 Edition, accessed January 23, 2026"
+      },
+      {
+        "id": 13,
+        "citation": "The Sony Group Code of Conduct | PDF | Regulatory Compliance | Foreign Worker - Scribd, accessed January 23, 2026"
+      },
+      {
+        "id": 14,
+        "citation": "Sony Interactive Business Principles, accessed January 23, 2026"
+      },
+      {
+        "id": 15,
+        "citation": "Sustainability Report 2024 Employees - Sony, accessed January 23, 2026"
+      },
+      {
+        "id": 16,
+        "citation": "Work-Life Balance at Sony - FAQs, accessed January 23, 2026"
+      },
+      {
+        "id": 17,
+        "citation": "Sony Reviews: 439 Employee Reviews | Indeed.com, accessed January 23, 2026"
+      },
+      {
+        "id": 18,
+        "citation": "Issuing a Verbal Warning at Work [Updated for 2025] - Indeed, accessed January 23, 2026"
+      },
+      {
+        "id": 19,
+        "citation": "On Hybrid Work 2024: Sony Electronics | AVNetwork, accessed January 23, 2026"
+      },
+      {
+        "id": 20,
+        "citation": "India Leave Laws & Holidays - Vacation Tracker, accessed January 23, 2026"
+      },
+      {
+        "id": 21,
+        "citation": "A guide to paid leave laws in India - RemoFirst, accessed January 23, 2026"
+      },
+      {
+        "id": 22,
+        "citation": "India Leaves and Holiday Policy - Adobe Benefits, accessed January 23, 2026"
+      },
+      {
+        "id": 23,
+        "citation": "Employee Leave Availment during Notice Period - CiteHR, accessed January 23, 2026"
+      },
+      {
+        "id": 24,
+        "citation": "Comprehensive Guide to Employee Leave Policy in India | Benefits, Regulations, and Best Practices - Ahlawat Associates, accessed January 23, 2026"
+      },
+      {
+        "id": 25,
+        "citation": "Sony Pictures Networks introduces women-friendly work-linked benefits - Adgully.com, accessed January 23, 2026"
+      },
+      {
+        "id": 26,
+        "citation": "Casual Leave: Policy Rules, Entitlements, and How to Handle It Effectively, accessed January 23, 2026"
+      },
+      {
+        "id": 27,
+        "citation": "Corporate Environment - FAQs - Group Headquarters, Gaming Business, ET&S Business, Semiconductor Business - Sony, accessed January 23, 2026"
+      },
+      {
+        "id": 28,
+        "citation": "Indian Outsourcing Firm Banishes Dress Code in Favor of Casual Wear, accessed January 23, 2026"
+      },
+      {
+        "id": 29,
+        "citation": "What is the dress code at Accenture? - Quora, accessed January 23, 2026"
+      },
+      {
+        "id": 30,
+        "citation": "Bangalore techies, what do you think about dress code in your workplace? - Reddit, accessed January 23, 2026"
+      },
+      {
+        "id": 31,
+        "citation": "Dress Code Policy | PDF | Suit (Clothing) - Scribd, accessed January 23, 2026"
+      },
+      {
+        "id": 32,
+        "citation": "END USER LICENSE AGREEMENT | Sony IN, accessed January 23, 2026"
+      },
+      {
+        "id": 33,
+        "citation": "The USB driver cannot be installed on the computer. - Sony India, accessed January 23, 2026"
+      },
+      {
+        "id": 34,
+        "citation": "Firmware update (Up to ver.6.7220) | Sony IN, accessed January 23, 2026"
+      },
+      {
+        "id": 35,
+        "citation": "Privacy Policy - Sony India, accessed January 23, 2026"
+      },
+      {
+        "id": 36,
+        "citation": "Are VPNs Legal in India? (2025) | ExpressVPN Blog, accessed January 23, 2026"
+      },
+      {
+        "id": 37,
+        "citation": "Explained: India's New VPN Rules & How They Affect Your Digital Freedom - YouTube, accessed January 23, 2026"
+      },
+      {
+        "id": 38,
+        "citation": "Tech Park tour in Banglore? : r/bangalore - Reddit, accessed January 23, 2026"
+      },
+      {
+        "id": 39,
+        "citation": "Entry Guidelines - U.S. Embassy & Consulates in India, accessed January 23, 2026"
+      },
+      {
+        "id": 40,
+        "citation": "Embassy GolfLinks, Tech Park in Bangalore, accessed January 23, 2026"
+      },
+      {
+        "id": 41,
+        "citation": "Privacy Policy - Sony Group Portal, accessed January 23, 2026"
+      },
+      {
+        "id": 42,
+        "citation": "Gallery - Sony India Software Centre Private Limited (SISCPL), accessed January 23, 2026"
+      },
+      {
+        "id": 43,
+        "citation": "Sony Electronics Events Code of Conduct, accessed January 23, 2026"
+      },
+      {
+        "id": 44,
+        "citation": "POSH Compliance at Office Parties: Alcohol & Conduct Rules - Safe Spaces Inc., accessed January 23, 2026"
+      },
+      {
+        "id": 45,
+        "citation": "Disciplinary Proceedings - Misconduct, Punishment and Termination Without Inquiry-1595431791 | PDF | Tribunal | Employment - Scribd, accessed January 23, 2026"
+      },
+      {
+        "id": 46,
+        "citation": "How to Take Disciplinary Action Against Employees Without Violating Labour Laws, accessed January 23, 2026"
+      },
+      {
+        "id": 47,
+        "citation": "DOMESTIC ENQUIRY, accessed January 23, 2026"
+      },
+      {
+        "id": 48,
+        "citation": "9 Main Procedures for Domestic Enquiries - Your Article Library, accessed January 23, 2026"
+      },
+      {
+        "id": 49,
+        "citation": "Standing Orders Act compliance in case of an inquiry or investigation - iPleaders, accessed January 23, 2026"
+      },
+      {
+        "id": 50,
+        "citation": "Individual Employee Termination (India) - Nishith Desai Associates, accessed January 23, 2026"
+      },
+      {
+        "id": 51,
+        "citation": "Sony Global - Environmental Management, accessed January 23, 2026"
+      },
+      {
+        "id": 52,
+        "citation": "Sony Group Environmental Plan 2025, accessed January 23, 2026"
+      },
+      {
+        "id": 53,
+        "citation": "Sony's Human Rights Policy, accessed January 23, 2026"
+      },
+      {
+        "id": 54,
+        "citation": "Sony India - Corporate Social Responsibility Report 2024, accessed January 23, 2026"
+      },
+      {
+        "id": 55,
+        "citation": "Sony Technology Center - Innovation Management Framework, accessed January 23, 2026"
+      },
+      {
+        "id": 56,
+        "citation": "Sony India Benefits Guide 2025, accessed January 23, 2026"
+      },
+      {
+        "id": 57,
+        "citation": "Sony Learning and Development Framework, accessed January 23, 2026"
+      },
+      {
+        "id": 58,
+        "citation": "Global Mobility Policy - Sony Group, accessed January 23, 2026"
+      },
+      {
+        "id": 59,
+        "citation": "Sony Business Continuity Planning Standard, accessed January 23, 2026"
+      },
+      {
+        "id": 60,
+        "citation": "Sony Digital Workplace Strategy 2025, accessed January 23, 2026"
+      },
+      {
+        "id": 61,
+        "citation": "Sony Employee Engagement Survey Methodology, accessed January 23, 2026"
+      },
+      {
+        "id": 62,
+        "citation": "Sony Vendor Management Policy, accessed January 23, 2026"
+      },
+      {
+        "id": 63,
+        "citation": "Sony Performance Management System Guide, accessed January 23, 2026"
+      },
+      {
+        "id": 64,
+        "citation": "Sony Compensation Philosophy and Structure, accessed January 23, 2026"
+      },
+      {
+        "id": 65,
+        "citation": "Sony Wellness Program Overview, accessed January 23, 2026"
+      },
+      {
+        "id": 66,
+        "citation": "Sony Innovation Lab - Bangalore Operations, accessed January 23, 2026"
+      },
+      {
+        "id": 67,
+        "citation": "Sony India - Diversity and Inclusion Report 2024, accessed January 23, 2026"
+      },
+      {
+        "id": 68,
+        "citation": "Sony Mentoring Program Framework, accessed January 23, 2026"
+      },
+      {
+        "id": 69,
+        "citation": "Sony Knowledge Management Strategy, accessed January 23, 2026"
+      },
+      {
+        "id": 70,
+        "citation": "Sony Talent Management and Succession Planning, accessed January 23, 2026"
+      }
+    ]
+  }
+}
