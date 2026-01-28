@@ -117,7 +117,7 @@ vectorstore-comparison/
 ├── latency_heatmap.png
 ├── rocstyle_correctness_curve.png
 └── README.md
-
+```
 ⚠️ Notes
 
 The dataset is intentionally small to isolate retrieval behavior.
