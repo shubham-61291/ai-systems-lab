@@ -174,11 +174,11 @@ Extended memory hierarchies
 Multi-agent orchestration
 
 Formal evaluation benchmarks
-
+```
 👨‍💻 Author
 Shubham Singh
-Self-Built Systems · Applied AI · Sovereign Architectures
+
 
 📜 License
 MIT License
-
+```
