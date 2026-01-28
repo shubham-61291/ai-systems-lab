@@ -182,7 +182,7 @@ The generated website is deployed to an existing GCP bucket.
 
 The RAG bot continues to function correctly **after deployment**.
 
-![Cloud RAG Working](cloud_rag_working.jpeg)
+![Cloud RAG Working](cloudrag_working.jpeg)
 
 ---
 
