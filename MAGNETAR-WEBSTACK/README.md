@@ -166,7 +166,7 @@ The model’s answer matches the exact policy clause from the uploaded document.
 
 Deployment to GCP is an explicit user choice.
 
-![Cloud Deployment Selected](clouddeployment_selected.jpeg)
+![Cloud Deployment Selected](clouddeployement_selected.jpeg)
 
 ---
 
