@@ -108,7 +108,7 @@ Using managed vector databases in these scenarios **adds cost without improving 
 
 ## 📂 Project Structure
 
-
+```text
 vectorstore-comparison/
 ├── custom_pinecone_comparison.py
 ├── Sony Bangalore Office Policy Creation.docx
@@ -117,6 +117,7 @@ vectorstore-comparison/
 ├── latency_heatmap.png
 ├── rocstyle_correctness_curve.png
 └── README.md
+
 ⚠️ Notes
 
 The dataset is intentionally small to isolate retrieval behavior.
