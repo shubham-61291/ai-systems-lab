@@ -152,7 +152,7 @@ You will see:
 
 🧠 Magnetar ready. Type 'exit' to quit.
 Ask natural language questions directly against the trained corpus.
-
+```
 🖼 Demo Output
 Unaltered, real system output generated during local inference
 (CPU-only execution, no reranking, no post-processing)
