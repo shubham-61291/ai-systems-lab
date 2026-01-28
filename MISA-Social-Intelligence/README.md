@@ -1,255 +1,215 @@
-MISA – Social Intelligence Advisor 📊🧠
+# MISA – Social Intelligence Engine 📊🧠  
+*A Self-Built, Metric-First Social & Competitive Intelligence System*
 
-A Metric-First, Data-Grounded Social & Competitive Intelligence System
+---
 
-📖 Overview
+## 📖 Overview
 
-MISA (Magnetar Social Intelligence Advisor) is a self-built, analyst-grade social intelligence system designed to convert raw enterprise social listening data into strategic, executive-ready insights.
+**MISA (Metric Intelligence & Signal Analysis)** is a self-authored social intelligence system designed to transform **enterprise social listening data** into **decision-ready competitive insights**.
 
-This project is not a chatbot, not a dashboard toy, and not a sentiment wrapper.
+This project is **not a chatbot**, **not a prompt-driven summarizer**, and **not a UI-first analytics demo**.
 
-MISA ingests Sprinklr-exported JSON data, performs deterministic metric computation, and produces structured competitive audits, keyword strategy diagnostics, and dashboards, culminating in a PDF-based strategic output suitable for consulting decks, CXO reviews, and academic evaluation.
+MISA ingests **Sprinklr-exported JSON data**, computes deterministic social intelligence metrics, performs structured comparative analysis, and produces **analyst-grade outputs**.  
+For readability and executive consumption, these outputs are **manually compiled into a PDF** from the system’s results, without altering any values or conclusions.
 
-The showcased run performs a comparative social intelligence audit between Tata and Mahindra, using real social listening data.
+The current implementation demonstrates a **comparative social intelligence audit of Tata Motors vs Mahindra**, using real Sprinklr listening data.
 
-🧠 What Makes MISA Different
+---
 
-MISA is metric-first, not language-first.
+## 🧠 Design Philosophy
 
-LLMs are used only after metrics are computed
+MISA is built on a single governing principle:
 
-No hallucinated insights
+> **Numbers come first. Language explains them later.**
 
-No narrative-before-numbers
+The system is intentionally **metric-first**, not language-first.
 
-No black-box “sentiment scores”
+- No narrative without computation  
+- No insight without a measurable signal  
+- No opinion without a comparative delta  
 
-Every conclusion in the final PDF is grounded in computed aggregates derived from Sprinklr JSON exports.
+Language is used **only to explain already-computed facts**.
 
-📊 Data Source (Explicit Disclosure)
-Primary Data Source: Sprinklr
+---
 
-Input data is derived from Sprinklr social listening exports
+## 📊 Data Source & Provenance
 
-Format: JSON / JSONL
+### **Primary Data Source**
+- **Sprinklr – Enterprise Social Listening Platform**
+- Exported **JSON datasets**
+- Fully offline processing after export
 
-Typical fields used:
+### Data Characteristics
+- Brand mention volumes
+- Sentiment-tagged interactions
+- Engagement distributions
+- Comparative brand signals
+- Topic and keyword indicators
 
-MENTIONS__SUM
+📌 No scraping  
+📌 No synthetic data  
+📌 No external enrichment  
+📌 No data leaves the local system  
 
-POSITIVE_MENTIONS__SUM
+All analytics originate strictly from **Sprinklr-provided data**.
 
-NEGATIVE_MENTIONS__SUM
+---
 
-NEUTRAL_MENTIONS__SUM
+## 🛡️ What Makes MISA Different
 
-WORD_CLOUD
+### ❌ What MISA Is Not
+- Not a chat assistant  
+- Not a RAG bot  
+- Not a sentiment “scorecard”  
+- Not narrative-first analytics  
 
-COUNTRY
+### ✅ What MISA Is
+- Deterministic signal-processing system  
+- Competitive intelligence engine  
+- Metric-bounded reasoning pipeline  
+- Audit-friendly, reviewer-safe analysis  
 
-🔒 No scraping, no synthetic data, no prompt-generated numbers
+---
 
-All analytics originate from enterprise-grade Sprinklr data.
+## 🚀 Core Capabilities
 
-🛡️ Why This Is Real Social Intelligence (Not a Demo)
-✅ Deterministic Metric Computation
+- Ingestion of **Sprinklr JSON exports**
+- Brand-wise signal aggregation
+- Comparative social intelligence analysis
+- Sentiment and volume diagnostics
+- Metric-grounded insight construction
+- **PDF compiled from system output (presentation-only)**
+- Fully offline execution
 
-Sentiment ratios are computed directly from mention aggregates
+---
 
-FGC vs UGC is calculated using token ownership logic, not model guesses
+## 📄 Output Modality & Clarification (Important)
 
-Crisis exposure is derived from negative-to-total sentiment ratios
+### Output Artifact
+- **`misa_output_tatavsmahindra.pdf`**
 
-✅ Pairwise Competitive Mode
+### Clarification
+The PDF included in this repository was **manually created from the system’s computed outputs**.
 
-One brand per JSON file
+- The system first produces **raw analytical results** (metrics, comparisons, plots).
+- These results were **compiled into a PDF** solely for presentation and review.
+- **No values, metrics, or conclusions were altered, regenerated, or reinterpreted** during PDF creation.
 
-Automatic brand detection from word-cloud dominance
+> **The PDF is a presentation artifact, not an analytical step.**
 
-Forced apples-to-apples comparison
+All intelligence, numbers, and insights originate directly from MISA’s execution on Sprinklr JSON data.
 
-✅ Audit-Grade Output
+---
 
-Outputs are rendered into a PDF, not just UI text
+## 🧠 System Architecture
 
-Designed for:
+### High-Level Pipeline
 
-Consulting reviews
-
-Strategy classrooms
-
-Internal leadership discussions
-
-🚀 Core Capabilities
-
-Comparative Strategic Audit
-
-Social Strategy vs Digital Strategy
-
-FGC vs UGC dominance
-
-Crisis maturity assessment
-
-Executive action recommendations
-
-Keyword Strategy Diagnostics
-
-Brand-owned vs community-driven narratives
-
-Top word-cloud tokens per brand
-
-Dashboard Visualizations
-
-Sentiment distribution (Positive / Negative / Neutral)
-
-Keyword dominance plots
-
-Country-level mention distribution
-
-PDF-Based Final Output
-
-All results consolidated into a multi-page PDF
-
-No manual editing or post-processing
-
-🧠 System Architecture
-Pipeline Overview
 Sprinklr JSON
-     ↓
+↓
 Metric Aggregation Engine
-     ↓
-FGC / UGC & Sentiment Analytics
-     ↓
-Strategic Contrast Logic
-     ↓
-LLM (Advisory Layer Only)
-     ↓
-Plots + Tables
-     ↓
-PDF Output
+↓
+Brand-wise Signal Processing
+↓
+Comparative Intelligence Logic
+↓
+Insight Assembly
+↓
+Plots & Tables
+↓
+System Output
+↓
+PDF (manual compilation for presentation)
 
-Key Architectural Principle
 
-Language explains the numbers — it does not create them.
+### Architectural Principle
+> Language explains the metrics — it does not invent them.
 
-🛠 Tech Stack
+---
 
-Language: Python
+## 🛠 Tech Stack
 
-Data Processing: Pandas
+- **Language:** Python  
+- **Data Format:** JSON (Sprinklr exports)  
+- **Processing:** Pandas-based deterministic pipeline  
+- **Visualization:** Matplotlib  
+- **UI Layer:** Gradio (execution interface)  
+- **Output Format:** System output + PDF presentation artifact  
+- **Runtime:** Local, CPU-only  
 
-Visualization: Matplotlib
+No hosted analytics or external data services are used.
 
-UI Layer: Gradio
+---
 
-LLM Usage: OpenAI (Advisory-only, post-metrics)
+## 📂 Project Structure
 
-Data Source: Sprinklr JSON exports
-
-Output Format: PDF (multi-page)
-
-📂 Project Structure
 MISA-Social-Intelligence/
-│── misa.py                         # Core social intelligence engine
-│── misa_output_tatavsmahindra.pdf  # Final strategic audit output (PDF)
-│── README.md                       # Documentation
+│
+├── misa.py
+│ # Core social intelligence engine
+│ # Sprinklr JSON ingestion
+│ # Metric computation and comparison logic
+│
+├── misa_output_tatavsmahindra.pdf
+│ # PDF compiled from system output
+│ # Presentation-only artifact
+│
+└── README.md
+# Documentation
 
-📄 Output Artifact (Important)
-misa_output_tatavsmahindra.pdf
 
-This PDF contains:
+---
 
-Comparative Strategic Audit
+## ⚠️ Interpretation & Scope Notes
 
-Tata vs Mahindra across:
+### Dataset-Bounded Intelligence
+- Results reflect **only the provided Sprinklr exports**
+- Insights are limited to the listening scope and time window of the dataset
 
-Social vs Digital Strategy
+### No Generative Embellishment
+- No creative rewriting  
+- No rhetorical amplification  
+- No speculative inference  
 
-FGC vs UGC balance
+Every statement in the output maps back to:
+- A computed metric  
+- A comparative difference  
+- Or an observed signal  
 
-Crisis exposure
+---
 
-Executive actions
+## ▶️ Usage
 
-Keyword Strategy Table
-
-Narrative capture percentages
-
-Community agency metrics
-
-Dashboards
-
-Sentiment bar charts
-
-Word cloud dominance plots
-
-Country-level distribution
-
-📌 The PDF is the authoritative output of the system.
-The UI is only a generation interface.
-
-⚠️ System Constraints & Transparency
-Dataset Scope
-
-Analysis reflects only the provided Sprinklr exports
-
-Results are bounded by the listening window and query scope used in Sprinklr
-
-No Data Augmentation
-
-No enrichment
-
-No synthetic expansion
-
-No external crawling
-
-No Metric Reranking
-
-No smoothing
-
-No normalization beyond explicit ratios
-
-Raw counts are preserved
-
-This ensures auditability and reproducibility.
-
-▶️ Usage
+```bash
 python misa.py
-
-
+```
 Steps:
 
-Upload two Sprinklr JSON files (one per brand)
+Load Sprinklr JSON data
 
-Click RUN
+Execute metric computation
 
-Review:
+Run comparative analysis
 
-Strategic audit
+Review system output
 
-Keyword strategy
-
-Dashboards
-
-Export / review the generated PDF output
+(Optional) Compile output into PDF for presentation
 
 🔮 Future Enhancements
-
 Multi-brand portfolio analysis
 
-Time-sliced trend analysis
+Temporal trend layering
 
-Cross-market comparison
+Campaign-level intelligence
 
-Automated board-ready slide generation
+Topic clustering
 
-Integration with governance workflows
+Optional post-metric advisory layer
+
+Integration with governance dashboards
 
 👨‍💻 Author
-
 Shubham Singh
 
-
 📜 License
-
 MIT License
