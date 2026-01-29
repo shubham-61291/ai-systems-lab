@@ -138,7 +138,7 @@ System-initiated agent introduction using avatar animation.
 
 ![Welcome Note](welcome_note_1.png)
 
-welcome_note_animation.mp4
+![Welcome Note Animation](welcome_note_animation.mp4)
 
 ---
 
@@ -148,7 +148,7 @@ Avatar explaining a scientific concept with synchronized speech and animation.
 
 ![Blackhole Explanation](blackhole_explaination.png)
 
-blackhole_animation.mp4
+![Blackhole Explanation](blackhole_animation.mp4)
 
 ---
 
@@ -175,6 +175,7 @@ All media reflects **actual system behavior**.
 
 ```bash
 python elara.py
+```
 Follow the UI steps to:
 
 Provide API keys
