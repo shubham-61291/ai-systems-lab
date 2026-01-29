@@ -202,8 +202,11 @@ Enterprise authentication
 Non-Colab deployments
 
 👨‍💻 Author
+
 Shubham Singh
+
 Magnetar Labs
 
 📜 License
+
 MIT License
