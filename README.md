@@ -1,90 +1,120 @@
-# AI Systems Lab 🧠⚙️
+AI Systems Lab 🧠⚙️
+A Systems-First Laboratory for Building, Evaluating, and Demonstrating Real-World AI Architectures
+Executive Snapshot
 
-**A Systems‑First Laboratory for Building, Evaluating, and Demonstrating Real‑World AI Architectures**
+AI Systems Lab is a systems-engineering repository that consolidates multiple independent, production-oriented AI systems under a single design philosophy.
 
----
+This is not a collection of notebooks, demos, or prompt experiments.
 
-## 1. What This Repository Is
+Each project in this lab is a standalone systems artifact, built to demonstrate how real AI systems behave under:
 
-`ai-systems-lab` is a **master, systems‑engineering repository** that consolidates multiple **independent but architecturally aligned AI systems** under one lab.
+explicit control
 
-This is **not** a collection of notebooks, demos, or prompt experiments.
+constrained resources
 
-This repository exists to demonstrate **how AI systems are actually built**:
+governance and compliance boundaries
 
-* With **clear authority boundaries**
-* With **explicit data flow**
-* With **verifiable execution artifacts**
-* With **resource, governance, and deployment constraints treated as first‑class design inputs**
+observable failure modes
 
-Every sub‑project here is:
+verifiable execution
 
-* Executable
-* Evidence‑backed (real outputs, screenshots, metrics)
-* Architecturally motivated
-* Designed as a *systems artifact*, not a toy
+This repository is meant to be inspected, not skimmed.
 
----
+1. What This Repository Is
 
-## 2. Unifying Design Philosophy (Across All Projects)
+ai-systems-lab is a master systems-engineering repository that brings together multiple architecturally aligned AI systems under one lab.
 
-Despite solving very different problems, **all projects in this repository follow the same core principles**:
+This repository exists to demonstrate how AI systems are actually built:
 
-### 2.1 Systems Before Models
+with clear authority boundaries
 
-Models are treated as **replaceable components**, not the system itself.
+with explicit data flow
 
-What matters:
+with verifiable execution artifacts
 
-* Where control lives
-* Where authority is enforced
-* How data enters and exits
-* What happens when information is missing
-* How the system fails
+with governance, deployment, and resource constraints treated as first-class design inputs
 
-### 2.2 Explicit Control & No Magic
+Every sub-project in this repository is:
+
+Executable
+
+Evidence-backed (real outputs, screenshots, metrics)
+
+Architecturally motivated
+
+Designed as a systems artifact, not a toy
+
+2. Unifying Design Philosophy (Across All Projects)
+
+Despite solving very different problems, all systems in this lab follow the same core principles.
+
+2.1 Systems Before Models
+
+Models are treated as replaceable components, not the system itself.
+
+What matters is:
+
+where control lives
+
+where authority is enforced
+
+how data enters and exits
+
+what happens when information is missing
+
+how the system fails
+
+2.2 Explicit Control & No Magic
 
 Across the lab:
 
-* No silent API calls
-* No hidden memory
-* No invisible orchestration
-* No demo‑only shortcuts
+no silent API calls
+
+no hidden memory
+
+no invisible orchestration
+
+no demo-only shortcuts
 
 If something happens, it is visible in code, logs, or artifacts.
 
-### 2.3 Evidence‑First Engineering
+2.3 Evidence-First Engineering
 
-Every claim is backed by **real execution output**:
+Every claim is backed by real execution output:
 
-* Screenshots
-* PDFs
-* Metrics
-* Latency plots
-* Raw model responses
+screenshots
+
+PDFs
+
+metrics
+
+latency plots
+
+raw model responses
 
 Nothing is simulated.
 
-### 2.4 Resource & Reality Awareness
+2.4 Resource & Reality Awareness
 
 Systems are intentionally built to survive:
 
-* CPU‑only execution
-* Colab instability
-* Small datasets
-* Limited memory
-* No enterprise infra
+CPU-only execution
 
-Scalability is designed **architecturally**, not assumed.
+Colab instability
 
----
+small datasets
 
-## 3. Repository Structure (Master View)
+limited memory
 
-```
+no enterprise infrastructure
+
+Scalability is designed architecturally, not assumed.
+
+3. Repository Structure (Master View)
 ai-systems-lab/
 │
 ├── ELARA-Agentic-Avatar/          # Multimodal avatar + agent pipeline
+├── GREEN-COMPUTE-MRV/             # Compliance-grade compute MRV system
 ├── MAGNETAR-SOVEREIGN/            # Fully offline sovereign LLM system
 ├── MAGNETAR-WEBSTACK/             # Website + document-grounded RAG + GCP
 ├── MCP-AGENTIC-CONTROL-LAB/        # MCP-style vs MCP-native agent control
@@ -93,244 +123,273 @@ ai-systems-lab/
 │
 ├── README.md                      # This master document
 └── LICENSE
-```
 
-Each folder is a **complete, standalone system**.
 
----
+Each directory is intentionally isolated to preserve architectural clarity and prevent shared hidden state.
 
-## 4. Systems Overview (Deep, Not Superficial)
+Each folder is a complete, standalone system.
 
----
+4. Systems Overview (Deep, Not Superficial)
+4.1 ELARA – Agentic Avatar System 🎥🧠
 
-## 4.1 ELARA – Agentic Avatar System 🎥🧠
+Problem Solved
+How do you build a real, multimodal AI avatar that:
 
-**Problem Solved**
-How do you build a *real*, multimodal AI avatar that:
+speaks
 
-* Speaks
-* Thinks
-* Animates
-* Degrades safely
-* Runs under severe resource constraints
+thinks
 
-**What ELARA Demonstrates**
+animates
 
-* End‑to‑end multimodal pipeline:
+degrades safely
 
-  * Speech → Text → LLM → Speech → Animation
-* PyTorch‑native talking‑head animation (Path‑C)
-* Explicit fallback paths (audio‑only)
-* Runtime ONNX checkpoint validation
+runs under severe resource constraints
 
-**Why This Matters**
+What ELARA Demonstrates
+
+end-to-end multimodal pipeline
+
+Speech → Text → LLM → Speech → Animation
+
+PyTorch-native talking-head animation (Path-C)
+
+explicit fallback paths (audio-only)
+
+runtime ONNX checkpoint validation
+
+Why This Matters
 
 Most avatar demos ignore:
 
-* Memory pressure
-* GPU volatility
-* Failure modes
+memory pressure
 
-ELARA shows how to **engineer the full stack**, not just the animation.
+GPU volatility
 
-**Artifacts**
+failure modes
 
-* Real avatar videos
-* Real latency
-* Real failures handled correctly
+ELARA engineers the entire stack, not just the animation.
 
----
+Artifacts
 
-## 4.2 MAGNETAR‑SOVEREIGN – Offline Sovereign LLM 🧠⚡
+real avatar videos
 
-**Problem Solved**
-Can you build GPT‑class language intelligence **without APIs, cloud inference, or vendor dependency**?
+real latency measurements
 
-**What MAGNETAR‑SOVEREIGN Demonstrates**
+real failures handled correctly
 
-* Fully self‑built GPT‑style transformer
-* Offline training + inference
-* Locally owned data
-* Deterministic behavior
-* No reranking, no rewriting, no masking
+4.2 MAGNETAR-SOVEREIGN – Offline Sovereign LLM 🧠⚡
 
-**Why This Matters**
+Problem Solved
+Can you build GPT-class language intelligence without APIs, cloud inference, or vendor dependency?
+
+What MAGNETAR-SOVEREIGN Demonstrates
+
+fully self-built GPT-style transformer
+
+offline training and inference
+
+locally owned data
+
+deterministic behavior
+
+no reranking, rewriting, or masking
+
+Why This Matters
 
 This system is designed for:
 
-* Policy environments
-* Regulated organizations
-* Data‑sovereign deployments
+policy environments
 
-It proves that *"LLM" does not mean "cloud API"*.
+regulated organizations
 
-**Artifacts**
+data-sovereign deployments
 
-* Raw inference screenshots
-* CPU‑only execution proof
-* Transparent limitations
+It proves that “LLM” does not mean “cloud API.”
 
----
+Artifacts
 
-## 4.3 MAGNETAR‑WEBSTACK – AI Website + RAG + Cloud 🌐☁️
+raw inference screenshots
 
-**Problem Solved**
-How do you go from **natural language → website → document‑faithful intelligence → cloud deployment** without losing control?
+CPU-only execution proof
 
-**What This System Demonstrates**
+transparent limitations
 
-* AI‑generated static websites
-* Optional document‑grounded RAG
-* Client‑side API key usage
-* Faithful retrieval (no hallucination)
-* GCP static hosting deployment
+4.3 MAGNETAR-WEBSTACK – AI Website + RAG + Cloud 🌐☁️
 
-**Why This Matters**
+Problem Solved
+How do you go from natural language → website → document-faithful intelligence → cloud deployment without losing control?
+
+What This System Demonstrates
+
+AI-generated static websites
+
+optional document-grounded RAG
+
+client-side API key usage
+
+faithful retrieval (no hallucination)
+
+GCP static hosting deployment
+
+Why This Matters
 
 This system shows that:
 
-* RAG does not require a backend server
-* AI websites can remain static and auditable
-* Cloud deployment can remain optional
+RAG does not require a backend server
 
-**Artifacts**
+AI websites can remain static and auditable
 
-* End‑to‑end screenshots
-* Policy verification images
-* Cloud‑live proof
+cloud deployment can remain optional
 
----
+Artifacts
 
-## 4.4 MCP‑AGENTIC‑CONTROL‑LAB 🛡️
+end-to-end screenshots
 
-**Problem Solved**
-Where should **authority and control** live in an agentic AI system?
+policy verification images
 
-**What This Repository Demonstrates**
+cloud-live proof
+
+4.4 MCP-AGENTIC-CONTROL-LAB 🛡️
+
+Problem Solved
+Where should authority and control live in an agentic AI system?
+
+What This Project Demonstrates
 
 Two complete systems:
 
-1. **MCP‑Style (UI‑Controlled)**
-2. **MCP‑Native (Tool‑Controlled)**
+MCP-Style (UI-controlled)
+
+MCP-Native (tool-controlled)
 
 Both solve the same problem:
 
-* Role‑based policy Q&A
-* Secure updates
-* Safe failure modes
+role-based policy Q&A
 
-**Why This Matters**
+secure updates
+
+safe failure modes
+
+Why This Matters
 
 This is not a chatbot comparison.
 
-It is a **governance architecture comparison**.
+It is a governance architecture comparison.
 
-**Artifacts**
+Artifacts
 
-* Authorization success & failure screenshots
-* Post‑update retrieval proof
-* Tool‑level enforcement evidence
+authorization success & failure screenshots
 
----
+post-update retrieval proof
 
-## 4.5 MISA – Social Intelligence Engine 📊🧠
+tool-level enforcement evidence
 
-**Problem Solved**
-How do you convert noisy social listening data into **decision‑ready competitive intelligence**?
+4.5 MISA – Social Intelligence Engine 📊🧠
 
-**What MISA Demonstrates**
+Problem Solved
+How do you convert noisy social listening data into decision-ready competitive intelligence?
 
-* Metric‑first analysis
-* Deterministic computation
-* No narrative hallucination
-* Analyst‑grade output
+What MISA Demonstrates
 
-**Why This Matters**
+metric-first analysis
 
-Most "AI analytics" tools start with language.
+deterministic computation
 
-MISA starts with **numbers**.
+no narrative hallucination
 
-Language is added *only after metrics exist*.
+analyst-grade output
 
-**Artifacts**
+Why This Matters
 
-* Real Sprinklr JSON processing
-* PDF compiled strictly from system output
+Most “AI analytics” tools start with language.
 
----
+MISA starts with numbers.
+Language is added only after metrics exist.
 
-## 4.6 Vector Store Benchmark – Local vs Managed 🧪
+Artifacts
 
-**Problem Solved**
+real Sprinklr JSON processing
+
+PDF compiled strictly from system output
+
+4.6 Vector Store Benchmark – Local vs Managed 🧪
+
+Problem Solved
 Do small RAG systems actually need managed vector databases?
 
-**What This Project Demonstrates**
+What This Project Demonstrates
 
-* Local NumPy vector store vs Pinecone
-* Identical datasets
-* Identical embedding models
-* Quantitative evaluation
+local NumPy vector store vs Pinecone
 
-**Key Finding**
+identical datasets
 
-> For small, well‑scoped datasets, managed vector DBs add **cost without benefit**.
+identical embedding models
 
-**Artifacts**
+quantitative evaluation
 
-* Latency heatmaps
-* Retrieval metrics
-* ROC‑style correctness curves
+Key Finding
 
----
+For small, well-scoped datasets, managed vector DBs add cost without benefit.
 
-## 5. How to Read This Repository
+Artifacts
+
+latency heatmaps
+
+retrieval metrics
+
+ROC-style correctness curves
+
+5. How to Read This Repository
 
 If you are:
 
-* **An engineer** → focus on architecture sections
-* **A researcher** → focus on design trade‑offs & limitations
-* **A reviewer** → inspect artifacts vs claims
-* **A hiring panel** → treat each folder as a systems case study
+an engineer → focus on architecture and control flow
 
-There is **no single entry point**.
+a researcher → study design trade-offs and limitations
 
+a reviewer → inspect artifacts versus claims
+
+a hiring panel → treat each folder as a systems case study
+
+There is no single entry point.
 Each system stands on its own.
 
----
+6. What This Repository Is NOT
 
-## 6. What This Repository Is NOT
+❌ Not a prompt gallery
+❌ Not a UI showcase
+❌ Not a synthetic demo repo
+❌ Not fine-tuned model hype
 
-* ❌ Not a prompt gallery
-* ❌ Not a UI showcase
-* ❌ Not a synthetic demo repo
-* ❌ Not fine‑tuned model hype
+This is a systems lab.
 
-This is a **systems lab**.
+7. Author
 
----
-
-## 7. Author
-
-**Shubham Singh**
+Shubham Singh
 Magnetar Labs
 
----
-
-## 8. License
+8. License
 
 MIT License
 
----
+9. How This Repository Should Be Evaluated
 
-## Final Note
+Evaluate this repository the same way you would evaluate a distributed system or infrastructure project:
 
-If you are evaluating this repository, evaluate it the same way you would evaluate a **distributed system or infrastructure project**:
+Is control explicit?
 
-* Look at control flow
-* Look at failure handling
-* Look at evidence
-* Look at architectural intent
+Are failure modes intentional and observable?
 
-This repository is meant to be *read*, not skimmed.
+Are claims backed by real artifacts?
 
+Are constraints treated as design inputs?
+
+Is architectural intent clear?
+
+If you are looking for polished demos, this repository is not optimized for that.
+
+If you are looking for how AI systems behave under reality, this repository is intentionally designed for inspection.
+
+Final Note
+
+This repository is meant to be read, not skimmed.
