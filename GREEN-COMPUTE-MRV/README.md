@@ -145,7 +145,10 @@ Together, they form a coherent thesis:
 - Researchers working on **digital MRV, green compute, or AI governance**
 
 ---
-## 
-## 10. License
+## 10.  Author
 
-MIT License (see repository root)
+Shubham Singh
+  
+## 11. License
+
+MIT License
