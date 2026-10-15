@@ -1,184 +1,116 @@
-# MAGNETAR-SOVEREIGN 🧠⚡  
-**A Self-Built, Offline, Sovereign Language Intelligence System**
+# MAGNETAR-SOVEREIGN
 
----
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Framework](https://img.shields.io/badge/Framework-PyTorch-ee4c2c?logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 
-## 📖 Overview
+**A small, custom causal-transformer language-model experiment with a local training pipeline and a command-line inference shell.**
 
-**MAGNETAR-SOVEREIGN** is a **self-authored GPT-class language intelligence system** built entirely from first principles using PyTorch.
+## Overview
 
-This project is **not a wrapper**, **not API-dependent**, and **not fine-tuned from any proprietary cloud model**.  
-The system is designed to **train, retrieve, reason, and respond locally**, preserving **data sovereignty, execution transparency, and architectural control**.
+MAGNETAR-SOVEREIGN is an experiment in building and inspecting a GPT-style causal language model using PyTorch modules defined in the repository. The architecture implements token and positional embeddings, causal self-attention, MLP blocks, residual/normalization layers, and a tied language-model output head. The training script converts a structured JSON corpus into text sequences, uses a GPT-2 tokenizer with additional special tokens, trains a custom model, and packages the trained weights and tokenizer assets.
 
-MAGNETAR-SOVEREIGN demonstrates how modern language intelligence can be engineered as a **standalone system**, rather than consumed as a hosted service.
+“Local” and “sovereign” describe the intended inference arrangement after required artifacts are present. They do not imply GPT-class performance, production readiness, a verified privacy certification, or the absence of dependencies during setup/training. The project does not provide a benchmark establishing parity with large hosted language models.
 
----
+## Components
 
-## 🛡️ Why “Sovereign”?
+| File | Role |
+|---|---|
+| [`self_made_gpt_local.py`](./self_made_gpt_local.py) | Reads a JSON training corpus, builds training examples, runs a small configuration-search pass and a 100-epoch final training loop, then saves a package ZIP. |
+| [`model.py`](./model.py) | Defines the custom PyTorch transformer and loads the saved configuration, tokenizer, and weights. |
+| [`app.py`](./app.py) | Interactive terminal loop; uses greedy next-token selection for up to 40 generated tokens per input. |
+| [`sony_json.json`](./sony_json.json) | Example JSON policy corpus included with the repository. |
+| [`output.png`](./output.png) | Previously captured local inference example. |
 
-MAGNETAR-SOVEREIGN qualifies as **sovereign AI** due to the following technical and architectural properties:
+## Architecture
 
-### ✅ Fully Offline Execution
-- No external inference APIs
-- No cloud calls
-- No telemetry or hidden network usage
-- All inference runs **locally on the host machine**
-
-### ✅ Self-Built Transformer Architecture
-- Custom GPT-style **causal transformer**
-- Hand-written attention, MLP, residual blocks
-- Explicit architectural configuration (layers, heads, embeddings)
-- No `AutoModel`, no black-box loaders
-
-### ✅ Self-Owned Training Pipeline
-- Custom data ingestion engine
-- Deterministic seed control
-- Native PyTorch training loop
-- Gradient clipping, AMP, validation, and HPO
-- No hosted training services
-
-### ✅ Data Sovereignty
-- Trained on **locally owned JSON corpora**
-- No data leaves the system
-- No vendor visibility into documents
-- Suitable for **policy, compliance, and internal knowledge bases**
-
-### ✅ Transparent Outputs
-- No reranking
-- No post-processing
-- No answer rewriting
-- Outputs reflect **true model behavior under real constraints**
-
-> **Sovereign ≠ bigger**  
-> **Sovereign = owned, inspectable, controllable**
-
----
-
-## 🚀 Key Capabilities
-
-- GPT-class causal language modeling
-- Structured policy and document ingestion
-- Multi-turn conversation learning
-- Assessment-style Q&A understanding
-- Local semantic memory vault (vector embeddings)
-- Deterministic inference behavior
-- Zero external dependency at runtime
-
----
-
-## 🧠 System Architecture
-
-### Core Components
-
-- **Magnetar-Sovereign Core**
-  - Causal self-attention transformer
-  - Residual + LayerNorm architecture
-
-- **Quantum Data Engine**
-  - Policy-aware JSON ingestion
-  - Multi-format semantic flattening
-
-- **Global Vault**
-  - Dense embeddings (BGE-Large)
-  - Local vector storage (`.npy`)
-
-- **Inference Shell**
-  - CLI-based interaction
-  - No UI abstraction or filtering
-
----
-
-## 🛠 Tech Stack
-
-- **Framework:** PyTorch  
-- **Architecture:** Custom GPT-style Transformer  
-- **Tokenizer:** GPT-2 tokenizer (locally extended)  
-- **Embeddings:** BAAI / BGE-Large  
-- **Training:** Native PyTorch (AdamW, AMP, clipping)  
-- **Runtime:** CPU-only (GPU optional)
-
----
-
-## 📂 Project Structure
-
-MAGNETAR-SOVEREIGN/
-│── app.py # Local inference shell
-│── model.py # Transformer architecture
-│── self_made_gpt_local.py # Training + data engine
-│── sony_json.json # Sample policy corpus
-│── output.png # Real, unfiltered output
-│── README.md # Documentation
-
-
----
-
-## ⚠️ Model Limitations & Output Disclosure
-
-The current outputs should be interpreted in the context of the system’s execution constraints.
-
-### Small Dataset
-The model is operating on a limited policy corpus, which restricts retrieval depth and cross-section coverage.  
-As a result, certain sections may be over-represented when semantically dense content dominates the dataset.
-
-### CPU-Only Inference
-The system is running entirely on a CPU-based device (laptop environment) without GPU acceleration. This leads to:
-- Slower inference times
-- Reduced practical context window usage
-- Conservative decoding to avoid latency spikes
-
-### No Fine-Tuning or Reranking
-The model is used in a **pure inference + retrieval setup**, without:
-- Domain fine-tuning
-- Cross-encoder reranking
-- Intent-aware routing
-
-This is intentional to preserve transparency of raw model behavior.
-
-### Real, Unfiltered Outputs
-All responses shown are **direct model outputs** with:
-- No post-processing
-- No summarization
-- No manual correction
-
-Any repetition or partial coverage reflects **true system behavior**, not demo manipulation.
-
----
-
-## ▶️ Usage
-
-```bash
-python app.py
-You will see:
-
-🧠 Magnetar ready. Type 'exit' to quit.
-Ask natural language questions directly against the trained corpus.
+```text
+Structured JSON corpus
+        |
+        v
+Data flattening / conversation and assessment examples
+        |
+        v
+GPT-2 tokenizer + extra conversation tokens
+        |
+        v
+Custom PyTorch causal transformer
+        |
+        v
+Training + validation loop; final training
+        |
+        v
+Weights + model config + tokenizer package
+        |
+        v
+Local CLI inference (greedy token selection)
 ```
-🖼 Demo Output
-Unaltered, real system output generated during local inference
-(CPU-only execution, no reranking, no post-processing)
 
-![MAGNETAR-SOVEREIGN – Real Local Inference Output](output.png)
+The code defines a custom transformer; it does not load an off-the-shelf pretrained GPT language model. The tokenizer is based on the Hugging Face GPT-2 tokenizer, extended during training. The training corpus and the quality and quantity of its examples therefore materially affect what the small model learns.
 
+## Runtime requirements and setup
 
-This output is shown exactly as produced by MAGNETAR-SOVEREIGN during local CPU inference.
+The repository listing currently contains `app.py`, `model.py`, `self_made_gpt_local.py`, `sony_json.json`, and a sample output image. It does **not** contain the inference artifacts that `model.py` opens by default: `magnetar_config.json`, `magnetar_weights.pth`, and the local `Magnetar_Tokenizer/` directory. Consequently, **`python app.py` will not work from a fresh clone until the trained artifact package has been generated and extracted into the expected working directory**.
 
-🔮 Future Enhancements
-GPU acceleration
+### Train and create the model package
 
-Cross-encoder reranking (optional)
+1. Create an environment with `torch`, `transformers`, `sentence-transformers`, and `numpy` installed. Training may require substantial time and memory; CUDA is used if PyTorch detects it.
+2. Run `self_made_gpt_local.py` with an appropriate corpus. The current script first checks for `deepseek_json_20251217_51e8ca.json`, then `THE_QUANTUM_MBA_COMPLETE.json`; if unavailable, it attempts a Google Colab file upload. `sony_json.json` is present in the project but is not the default filename requested by the training code. Either provide the expected file name or adapt the input selection deliberately.
+3. The training script writes a `Magnetar_Brain.zip` package. Its contents include `magnetar_weights.pth`, `magnetar_config.json`, `Magnetar_Tokenizer/`, plus a local vector-vault artifact and corresponding text JSON.
+4. Extract the package contents into the same working directory from which `app.py` / `model.py` are run, so the relative paths in `load_model()` resolve.
+5. Start `python app.py`, enter a prompt, and type `exit` to stop the loop.
 
-Intent-aware routing
+The training file is notebook-export oriented because its missing-data path uses `google.colab.files.upload()`. A normal local run is possible only when the expected JSON file already exists (or the upload path is adapted). Model/tokenizer downloads may require network access during setup; after assets are present locally, `app.py` is designed to run inference locally.
 
-Extended memory hierarchies
+## Model configuration in the current trainer
 
-Multi-agent orchestration
+- Embedding width: 768.
+- Context/block length: 1,024 tokens.
+- Head count: 8.
+- Tested depths: 4 and 6 transformer blocks.
+- Batch size: 2.
+- Final training loop: 100 epochs.
+- Optimizer: AdamW; gradient clipping is used; mixed precision is enabled when CUDA is available.
+- Generation in `app.py`: greedy argmax for 40 new tokens.
 
-Formal evaluation benchmarks
-```
-👨‍💻 Author
-Shubham Singh
+These settings describe the source code, not a claim about measured model quality or an optimized training recipe. The “HPO” pass is a very small exploratory comparison, capped to 10 training batches per candidate configuration.
 
+## Limitations and safe use
 
-📜 License
+- **Small experimental model:** Do not describe the model as equivalent to GPT-class hosted systems without evaluation evidence. It can repeat text, answer incorrectly, or fail to follow instructions.
+- **Training input:** The code may serialize conversational and assessment content into training sequences. Ensure you have rights to use the corpus and exclude confidential, personal, or regulated data unless authorized.
+- **Artifact requirement:** Model weights, configuration, and tokenizer artifacts are generated outputs and are absent from the current repository snapshot.
+- **Resource needs:** The trainer uses 1,024-token sequences and a 100-epoch loop; execution cost varies widely by dataset and hardware.
+- **No safety layer:** The CLI does not implement content moderation, retrieval citations, authentication, or an evaluation-based quality gate.
+- **Reproducibility:** Seeds are set, but practical determinism can vary by framework, hardware, and numerical operations.
+- **Embeddings are ancillary:** The trainer produces a BGE-based local vector vault, but the current `app.py` inference loop does not query that vault for RAG.
+
+## Author
+
+**Shubham Kumar Singh**
+
+## License
+
+The following MIT License text is also provided as a standalone [`LICENSE`](./LICENSE) file in this project directory.
+
 MIT License
-```
+
+Copyright (c) 2026 Shubham Kumar Singh
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
