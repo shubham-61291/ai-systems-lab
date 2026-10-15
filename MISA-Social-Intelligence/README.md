@@ -1,215 +1,117 @@
-# MISA – Social Intelligence Engine 📊🧠  
-*A Self-Built, Metric-First Social & Competitive Intelligence System*
+# MISA — Metric Intelligence & Signal Analysis
 
----
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Analytics](https://img.shields.io/badge/Approach-Metric--first-26734D)](https://pandas.pydata.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 
-## 📖 Overview
+**A pairwise social-listening analysis workbench that calculates brand metrics from Sprinklr-style JSON exports, visualizes comparative signals, and adds an OpenAI-generated advisory.**
 
-**MISA (Metric Intelligence & Signal Analysis)** is a self-authored social intelligence system designed to transform **enterprise social listening data** into **decision-ready competitive insights**.
+## Overview
 
-This project is **not a chatbot**, **not a prompt-driven summarizer**, and **not a UI-first analytics demo**.
+MISA is a data-processing and comparison prototype intended to make structured social-listening exports easier to inspect. The checked-in `misa.py` loads JSON arrays or JSON Lines, derives a brand label from `WORD_CLOUD` rows, reads aggregate sentiment and country/topic fields, calculates a small set of comparison metrics, creates four charts, and requests an LLM-generated strategic advisory.
 
-MISA ingests **Sprinklr-exported JSON data**, computes deterministic social intelligence metrics, performs structured comparative analysis, and produces **analyst-grade outputs**.  
-For readability and executive consumption, these outputs are **manually compiled into a PDF** from the system’s results, without altering any values or conclusions.
+The current workflow uses the **first two uploaded files only**. The included `misa_output_tatavsmahindra.pdf` is a pre-existing presentation artifact; the current Python source renders charts and text in Gradio but does not automatically build that PDF.
 
-The current implementation demonstrates a **comparative social intelligence audit of Tata Motors vs Mahindra**, using real Sprinklr listening data.
+## What the current code computes
 
----
+- **Brand detection:** sums `MENTIONS__SUM` over qualifying `WORD_CLOUD` tokens and chooses the most frequent tokens as brand labels.
+- **Sentiment totals:** reads `POSITIVE_MENTIONS__SUM`, `NEGATIVE_MENTIONS__SUM`, and `NEUTRAL_MENTIONS__SUM` from a compatible aggregate row; if none is found, the current fallback initializes these totals to zero.
+- **Narrative capture (FGC heuristic):** calculates the share of mentions in the word-cloud rows whose token contains the detected brand string, excluding tokens containing `/` or `&`.
+- **Community agency (UGC):** reports `100 − FGC` based on that heuristic.
+- **Crisis exposure (heuristic):** calculates negative mentions divided by positive plus negative mentions; neutral mentions are not included in this denominator.
+- **Visualizations:** creates sentiment bars, each brand’s top word-cloud terms, and a combined top-country chart.
+- **Advisory:** submits the two brands’ sentiment aggregate dictionaries to `gpt-4o-mini` using a strategic-consultant prompt.
 
-## 🧠 Design Philosophy
+These calculations are the definitions implemented in this source snapshot. In particular, “FGC,” “UGC,” and “Crisis Exposure” are project-defined proxies; they should not be presented as independently validated industry-standard metrics without further specification and validation.
 
-MISA is built on a single governing principle:
+## Pipeline
 
-> **Numbers come first. Language explains them later.**
+```text
+Two JSON / JSONL files
+          |
+          v
+Load rows + detect one brand from each file
+          |
+          v
+Aggregate supplied sentiment / word-cloud / country fields
+          |
+          +---------------------+
+          |                     |
+          v                     v
+Metric comparison + plots   OpenAI advisory call
+          |                     |
+          +----------+----------+
+                     v
+               Gradio results
+```
 
-The system is intentionally **metric-first**, not language-first.
+## Input contract
 
-- No narrative without computation  
-- No insight without a measurable signal  
-- No opinion without a comparative delta  
+Upload at least two files. The current parser accepts a JSON array or one JSON object per line (JSONL). For meaningful output, data should include fields used by the functions, such as:
 
-Language is used **only to explain already-computed facts**.
+- `WORD_CLOUD` and numeric `MENTIONS__SUM` for brand detection and term aggregation.
+- A compatible aggregate row with `POSITIVE_MENTIONS__SUM`, `NEGATIVE_MENTIONS__SUM`, and `NEUTRAL_MENTIONS__SUM`.
+- Optional `COUNTRY` with numeric `MENTIONS__SUM` for country charts.
 
----
+Each file is treated as a single-brand dataset. Extra uploaded files beyond the first two are not processed by the current `run_pipeline()` implementation. Validate brand derivation and the meaning of each source field before comparing files; malformed schemas can produce zero-filled values or raise errors.
 
-## 📊 Data Source & Provenance
+## Setup and execution
 
-### **Primary Data Source**
-- **Sprinklr – Enterprise Social Listening Platform**
-- Exported **JSON datasets**
-- Fully offline processing after export
+The code imports `pandas`, `matplotlib`, `gradio`, and `openai`. The source currently initializes the OpenAI client with `OpenAI(api_key="")`; it will not work until that placeholder is replaced by a secure credential-loading approach. For a conventional local setup, adapt the initialization to read `OPENAI_API_KEY` from the environment (for example, use `OpenAI()` with the environment variable configured) rather than putting a real key in the file.
 
-### Data Characteristics
-- Brand mention volumes
-- Sentiment-tagged interactions
-- Engagement distributions
-- Comparative brand signals
-- Topic and keyword indicators
+```bash
+pip install pandas matplotlib gradio openai
+```
 
-📌 No scraping  
-📌 No synthetic data  
-📌 No external enrichment  
-📌 No data leaves the local system  
-
-All analytics originate strictly from **Sprinklr-provided data**.
-
----
-
-## 🛡️ What Makes MISA Different
-
-### ❌ What MISA Is Not
-- Not a chat assistant  
-- Not a RAG bot  
-- Not a sentiment “scorecard”  
-- Not narrative-first analytics  
-
-### ✅ What MISA Is
-- Deterministic signal-processing system  
-- Competitive intelligence engine  
-- Metric-bounded reasoning pipeline  
-- Audit-friendly, reviewer-safe analysis  
-
----
-
-## 🚀 Core Capabilities
-
-- Ingestion of **Sprinklr JSON exports**
-- Brand-wise signal aggregation
-- Comparative social intelligence analysis
-- Sentiment and volume diagnostics
-- Metric-grounded insight construction
-- **PDF compiled from system output (presentation-only)**
-- Fully offline execution
-
----
-
-## 📄 Output Modality & Clarification (Important)
-
-### Output Artifact
-- **`misa_output_tatavsmahindra.pdf`**
-
-### Clarification
-The PDF included in this repository was **manually created from the system’s computed outputs**.
-
-- The system first produces **raw analytical results** (metrics, comparisons, plots).
-- These results were **compiled into a PDF** solely for presentation and review.
-- **No values, metrics, or conclusions were altered, regenerated, or reinterpreted** during PDF creation.
-
-> **The PDF is a presentation artifact, not an analytical step.**
-
-All intelligence, numbers, and insights originate directly from MISA’s execution on Sprinklr JSON data.
-
----
-
-## 🧠 System Architecture
-
-### High-Level Pipeline
-
-Sprinklr JSON
-↓
-Metric Aggregation Engine
-↓
-Brand-wise Signal Processing
-↓
-Comparative Intelligence Logic
-↓
-Insight Assembly
-↓
-Plots & Tables
-↓
-System Output
-↓
-PDF (manual compilation for presentation)
-
-
-### Architectural Principle
-> Language explains the metrics — it does not invent them.
-
----
-
-## 🛠 Tech Stack
-
-- **Language:** Python  
-- **Data Format:** JSON (Sprinklr exports)  
-- **Processing:** Pandas-based deterministic pipeline  
-- **Visualization:** Matplotlib  
-- **UI Layer:** Gradio (execution interface)  
-- **Output Format:** System output + PDF presentation artifact  
-- **Runtime:** Local, CPU-only  
-
-No hosted analytics or external data services are used.
-
----
-
-## 📂 Project Structure
-
-MISA-Social-Intelligence/
-│
-├── misa.py
-│ # Core social intelligence engine
-│ # Sprinklr JSON ingestion
-│ # Metric computation and comparison logic
-│
-├── misa_output_tatavsmahindra.pdf
-│ # PDF compiled from system output
-│ # Presentation-only artifact
-│
-└── README.md
-# Documentation
-
-
----
-
-## ⚠️ Interpretation & Scope Notes
-
-### Dataset-Bounded Intelligence
-- Results reflect **only the provided Sprinklr exports**
-- Insights are limited to the listening scope and time window of the dataset
-
-### No Generative Embellishment
-- No creative rewriting  
-- No rhetorical amplification  
-- No speculative inference  
-
-Every statement in the output maps back to:
-- A computed metric  
-- A comparative difference  
-- Or an observed signal  
-
----
-
-## ▶️ Usage
+After correcting the key initialization without committing secrets, run:
 
 ```bash
 python misa.py
+```
 
-Steps:
+Use the Gradio UI to upload two compatible exports, click **RUN**, and review the advisory, metric table, and plots. This code snapshot does not bundle raw Sprinklr JSON input files, so provide authorized exports yourself.
 
-Load Sprinklr JSON data
+## Included artifact
 
-Execute metric computation
+- [misa_output_tatavsmahindra.pdf](./misa_output_tatavsmahindra.pdf) — prior comparative report artifact. It is not generated automatically by the current source file.
+- [`misa.py`](./misa.py) — current application source.
 
-Run comparative analysis
+## Interpretation, privacy, and limitations
 
-Review system output
+- **Data scope:** results can represent only the supplied export, including its collection window, filters, tagging quality, and sampling choices. This code does not fetch social data itself.
+- **Advisory is not offline:** core aggregations and plots run locally, but the strategic advisory calls the OpenAI API. The source therefore does not support a blanket “no data leaves the local system” claim.
+- **Limited advisory input:** the LLM receives the per-brand aggregate sentiment dictionary, not the full raw dataset or every chart. It may add generalizations beyond the supplied metrics; review its recommendations.
+- **Heuristic semantics:** word-token containment is a proxy for narrative/brand mention, not a validated attribution model. Negative/(positive + negative) is a ratio over the supplied aggregate labels, not a complete crisis-risk metric.
+- **Schema-sensitive behavior:** missing sentiment aggregates default to zero. Zero can mean “not supplied” rather than “no sentiment”; distinguish those cases before interpretation.
+- **Credential handling:** do not commit API keys or upload personally identifiable or confidential social-listening exports unless permitted by the data owner and applicable policies.
+- **Not a business decision oracle:** no causal analysis, uncertainty intervals, independent validation, or ground-truth evaluation is implemented.
 
-(Optional) Compile output into PDF for presentation
+## Author
 
-🔮 Future Enhancements
-Multi-brand portfolio analysis
+**Shubham Kumar Singh**
 
-Temporal trend layering
+## License
 
-Campaign-level intelligence
+The following MIT License text is also provided as a standalone [`LICENSE`](./LICENSE) file in this project directory.
 
-Topic clustering
-
-Optional post-metric advisory layer
-
-Integration with governance dashboards
-
-👨‍💻 Author
-Shubham Singh
-
-📜 License
 MIT License
+
+Copyright (c) 2026 Shubham Kumar Singh
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
