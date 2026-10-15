@@ -1,222 +1,138 @@
-🛡️ MCP-AGENTIC-CONTROL-LAB
+# MCP-AGENTIC-CONTROL-LAB
 
-Comparative Agentic RAG Architectures: MCP-Style vs MCP-Native Control
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![RAG](https://img.shields.io/badge/Pattern-RAG-5B6DAA)](https://en.wikipedia.org/wiki/Retrieval-augmented_generation)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 
-📖 Overview
+**A side-by-side experiment comparing application/UI-level role routing with a tool-bound authorization pattern for policy-document retrieval and updates.**
 
-MCP-AGENTIC-CONTROL-LAB is a systems-engineering project that demonstrates two complete, working implementations of a role-based, document-grounded Retrieval-Augmented Generation (RAG) system—built using two fundamentally different control paradigms:
+## Overview
 
-MCP-Style RAG (UI-Orchestrated Control)
+MCP-AGENTIC-CONTROL-LAB explores where authorization checks should sit in a retrieval-augmented policy assistant. The directory contains two implementations of a similar workflow:
 
-MCP-Native RAG (Agent → Tool → Context Control)
+- **MCP-Style variant** — `mcp_inspired_rag.py`, with role-oriented UI flows and Pinecone-backed policy retrieval.
+- **Tool-bound / “MCP-Native” variant** — `mcp_native.py`, with a local `MCPServer` class exposing retrieval and update operations and checking an email string before updates.
 
-Both systems solve the same enterprise problem:
+These are prototypes for discussing authority placement. **The checked-in code does not import or implement the official MCP SDK or MCP wire protocol.** “MCP-Native” is the project’s name for a tool-oriented control pattern, not a claim that it is a conformant MCP server.
 
-Policy document ingestion
+## Comparison
 
-Role-based access control (Admin / User / Unknown)
+| Dimension | MCP-Style (`mcp_inspired_rag.py`) | Tool-bound (`mcp_native.py`) |
+|---|---|---|
+| Main idea | UI/application routes the user to role-specific views | Application calls a local tool façade for retrieval and updates |
+| Retrieval | SentenceTransformer embeddings + Pinecone | SentenceTransformer embeddings + Pinecone |
+| Q&A model | OpenAI `gpt-4.1-mini` in the current source | OpenAI `gpt-4o-mini` in the current source |
+| Update rule | UI is intended to expose updates to the admin view; the update handler itself only validates that text is non-empty | `update_policy_context` compares the submitted email with a hard-coded admin email before updating |
+| What it demonstrates | UX-level authority separation | A central update function with an explicit authorization condition |
+| Security conclusion | UI hiding alone is not a security boundary | Hard-coded, self-asserted email is not real authentication |
 
-Secure policy updates
+Both scripts use a Pinecone index named `mcp-rag-index` and 384-dimensional embeddings from `all-MiniLM-L6-v2`. The scripts can update the same index, so test data and updates can persist across runs and between variants unless the operator manages index contents separately.
 
-Faithful, non-hallucinated answers
+## High-level flow
 
-Safe handling of missing information
+```text
+Uploaded policy document
+          |
+          v
+Chunking + sentence embeddings
+          |
+          v
+       Pinecone
+          |
+       Query path
+          |
+          v
+Retrieved chunks -> hosted OpenAI response
 
-The purpose of this repository is not to show “another RAG chatbot”.
+Update path:
+MCP-Style: UI route -> application handler -> Pinecone upsert
+Tool-bound: UI -> local tool façade -> email-string check -> Pinecone upsert
+```
 
-It exists to answer a deeper systems question:
+## Run prerequisites
 
-Where should authority, trust, and control live in an agentic AI system?
+Both source files are exported from Google Colab and contain `!pip` syntax and/or `google.colab.files` uploads. They should be run as notebook code in Colab or adapted before use as ordinary Python modules.
 
-🧠 What This Repository Demonstrates
+Prerequisites include:
 
-This repository intentionally contains two implementations side-by-side to demonstrate architectural trade-offs, not redundancy.
+- Python with `openai`, `sentence-transformers`, `pinecone`, `tiktoken`, `gradio`, `numpy`, `python-docx`, and `PyPDF2` installed.
+- An OpenAI API key and a Pinecone API key.
+- A Pinecone index named `mcp-rag-index`, configured for 384-dimensional vectors and cosine similarity if created by the script.
+- A policy source document for initial ingestion. The tool-bound variant calls `google.colab.files.upload()` directly; the style variant has a local-path fallback configured to `/mnt/data/Sony Bangalore Office Policy Creation.docx` and otherwise includes upload logic.
 
-You will see:
+In the committed versions, both API-key variables are empty strings. Configure credentials securely and never store real secrets in the source file or screenshots. The style variant’s local fallback path refers to a runtime file path, not a file guaranteed to exist in this repository directory.
 
-The same policy Q&A problem solved in two ways
+## Demonstration assets
 
-The same outputs achieved through different control flows
+### MCP-Style variant
 
-Clear evidence of:
+- [Main interface](./interface.png)
+- [Admin interface](./admin_interface.png)
+- [User interface](./user_interface.png)
+- [Unknown email denied](./unknowemail_denied.png)
+- [Admin update flow](./information_update_admin_acc.png)
+- [User reads updated content](./after_update_retrieval_user_acc.png)
+- [Missing information response](./non_available_info.png)
 
-Authorization success
+### Tool-bound variant
 
-Authorization failure
+- [Tool-bound interface](./mcp_native_interface.png)
+- [Answer example](./mcp_native_answer.png)
+- [Admin update accepted](./mcp_native_admin_udate_accepted.png)
+- [Retrieval after update](./mcp_native_answer_retrieved_afterupdate.png)
+- [User update blocked](./mcp_native_user_update_blocked.png)
+- [Authorization check example](./mcp_native_authorization_check_fail.png)
+- [Missing-information example](./mcp_native_lackofinfo.png)
 
-Post-update retrieval correctness
+## Security analysis and limitations
 
-Safe failure modes (no hallucinations)
+- **The email field is not authentication.** Users can type a known email into the UI; neither script verifies identity through an identity provider or signed session.
+- **The MCP-Style UI is not a backend access-control boundary.** Its admin update handler checks for empty text but does not itself authenticate the caller. Hiding the admin UI does not prove the update endpoint is protected.
+- **Tool-bound authorization is a useful architectural illustration but still weak.** It compares a submitted email string with a constant; it is not a production authorization system.
+- **No production deployment controls:** no backend identity provider, secret rotation, audit trail with tamper protection, tenant isolation, policy rollback, or threat-model-validated security boundary is implemented.
+- **Index state persists:** updates are upserts into a remote Pinecone index; old chunks are not automatically removed when policy text changes. Stale or duplicate content can affect later answers.
+- **LLM output:** responses may be wrong or incomplete even when retrieval provides context. The current code uses nonzero temperature for the tool-bound variant.
+- **External services:** uploaded document chunks and questions are sent to Pinecone/OpenAI. Use only data approved for those services.
 
-All screenshots are real system outputs, captured during execution.
+Use this repository for controlled testing and architectural comparison, not to enforce access to real corporate policies or confidential information.
 
-🏗️ Architectural Variants
-1️⃣ MCP-Style RAG (UI-Orchestrated)
+## Project files
 
-📄 File: mcp_inspired_rag.py
+```text
+MCP-AGENTIC-CONTROL-LAB/
+├── mcp_inspired_rag.py
+├── mcp_native.py
+├── interface and test screenshots (*.png)
+├── README.md
+└── LICENSE
+```
 
-Control Flow
+## Author
 
-User → UI → Application Logic → Vector Store → LLM → UI
+**Shubham Kumar Singh**
 
+## License
 
-Key Characteristics
-
-Role enforcement handled in the UI / app layer
-
-Admin vs User decisions occur before LLM interaction
-
-LLM is passive and unaware of authorization failures
-
-Evaluation metrics layered externally
-
-Best suited for
-
-Internal dashboards
-
-Rapid demos
-
-Human-controlled workflows
-
-2️⃣ MCP-Native RAG (Agent-Tool Orchestrated)
-
-📄 File: mcp_native.py
-
-Control Flow
-
-User → Agent (LLM) → Tool Call → Context → Agent (LLM) → UI
-
-
-Key Characteristics
-
-Authorization enforced inside tools
-
-Agent is explicitly aware of:
-
-Authorization failure
-
-Missing context
-
-Tool outcomes
-
-Designed for auditability and extensibility
-
-Aligns with Model Context Protocol (MCP) principles
-
-Best suited for
-
-Policy engines
-
-Regulated systems
-
-Multi-agent platforms
-
-🛡️ Design Principles
-
-✅ Explicit Authority Placement
-Authority is deliberately placed either in the UI (MCP-Style) or in tools (MCP-Native).
-
-✅ Document-Faithful RAG
-Answers are generated strictly from retrieved document context.
-
-✅ Safe Failure Modes
-When information is missing, the system responds safely instead of hallucinating.
-
-✅ Evidence-First Demonstration
-All screenshots reflect real executions, not curated demos.
-
-🧪 Step-by-Step Demonstration (MCP-Style RAG)
-1️⃣ System Interface (MCP-Style)
-<img src="./interface.png" width="100%"/>
-2️⃣ Admin Dashboard Interface
-<img src="./admin_interface.png" width="100%"/>
-3️⃣ User Dashboard Interface
-<img src="./user_interface.png" width="100%"/>
-4️⃣ Unknown Email Denied (Access Control Proof)
-<img src="./unknowemail_denied.png" width="100%"/>
-5️⃣ Admin Answer (Policy Q&A)
-<img src="./admin_answer_1.png" width="100%"/>
-6️⃣ Admin Updates Policy Snippet (Write Path)
-<img src="./information_update_admin_acc.png" width="100%"/>
-7️⃣ User Retrieves Updated Policy Answer (Post-Update Proof)
-<img src="./after_update_retrieval_user_acc.png" width="100%"/>
-8️⃣ User Answer + Evaluation Metrics Visible
-<img src="./user_answer_1.png" width="100%"/>
-9️⃣ Missing Information Handling (Safe Output)
-<img src="./non_available_info.png" width="100%"/>
-🧪 Step-by-Step Demonstration (MCP-Native RAG)
-🔟 MCP-Native Core Interface
-<img src="./mcp_native_interface.png" width="100%"/>
-1️⃣1️⃣ MCP-Native: Answer Output (Policy Q&A)
-<img src="./mcp_native_answer.png" width="100%"/>
-1️⃣2️⃣ MCP-Native: Admin Answer (Evidence of Allowed Access)
-<img src="./mcp_native_admin_answer.png" width="100%"/>
-1️⃣3️⃣ MCP-Native: Admin Policy Injection Accepted (Authorized Write)
-<img src="./mcp_native_admin_udate_accepted.png" width="100%"/>
-1️⃣4️⃣ MCP-Native: Answer Retrieved After Update (Update → Retrieval Proof)
-<img src="./mcp_native_answer_retrieved_afterupdate.png" width="100%"/>
-1️⃣5️⃣ MCP-Native: User Answer Output
-<img src="./mcp_native_user_answer.png" width="100%"/>
-1️⃣6️⃣ MCP-Native: User Update Blocked (Unauthorized Write Attempt)
-<img src="./mcp_native_user_update_blocked.png" width="100%"/>
-1️⃣7️⃣ MCP-Native: Authorization Check Fail (Tool-Level Enforcement Proof)
-<img src="./mcp_native_authorization_check_fail.png" width="100%"/>
-1️⃣8️⃣ MCP-Native: Lack of Information Response (Safe Output)
-<img src="./mcp_native_lackofinfo.png" width="100%"/>
-🔍 Comparative Summary
-Dimension	MCP-Style RAG	MCP-Native RAG
-Authority location	UI / App layer	Tool layer
-LLM awareness of auth	Low	High
-Tool contracts	Implicit	Explicit
-Auditability	Medium	Strong
-Multi-agent readiness	Limited	Native
-Best use case	Demos, dashboards	Scalable agent systems
-⚠️ Limitations & Disclosure
-
-No cross-encoder reranking (direct similarity retrieval)
-
-No persistent server-side memory beyond vector storage
-
-No hidden prompt rewriting
-
-LLM access requires an API key
-
-Screenshots reflect real, unfiltered outputs
-
-▶️ Usage
-python mcp_inspired_rag.py
-# OR
-python mcp_native.py
-
-
-Then:
-
-Log in as Admin or User
-
-Ask policy questions
-
-Inject policy updates (Admin only)
-
-Observe retrieval correctness and enforcement
-
-🔮 Future Enhancements
-
-Unified MCP-Native + evaluation pipeline
-
-Tool-level audit logs
-
-Multi-agent orchestration
-
-Source citation overlays
-
-Optional reranking layer
-
-API-first deployment (FastAPI)
-
-👨‍💻 Author
-
-Shubham Singh
-
-📜 License
+The following MIT License text is also provided as a standalone [`LICENSE`](./LICENSE) file in this project directory.
 
 MIT License
+
+Copyright (c) 2026 Shubham Kumar Singh
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
