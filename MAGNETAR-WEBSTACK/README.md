@@ -1,272 +1,134 @@
-# MAGNETAR-WEBSTACK 🌐☁️  
-**An AI-Powered Website Generation, Document-Grounded RAG, and GCP Deployment System**
+# MAGNETAR-WEBSTACK
+
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![UI](https://img.shields.io/badge/UI-Gradio-orange)](https://www.gradio.app/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
+
+**A website-generation workbench that creates a static HTML page from a prompt, can embed an optional document-grounded Q&A widget, and can upload the result to a preconfigured Google Cloud Storage bucket.**
+
+## Overview
+
+MAGNETAR-WEBSTACK combines three distinct steps: server-side HTML generation using OpenAI, optional document parsing and chunking for an in-page retrieval assistant, and optional deployment of the generated `index.html` to a Google Cloud Storage bucket. The UI can preview the generated page and package it into a ZIP.
+
+The checked-in `websitecreation+rag+gcpdeployment.py` is a Colab-exported script and includes notebook shell syntax (`!pip`). It is not directly executable as a normal Python file without adapting the install cells and Colab-specific runtime assumptions.
+
+## Capabilities
+
+- Generate a single-page static website from a natural-language prompt using `gpt-5-nano`.
+- Add an optional RAG widget to the generated HTML.
+- Read supported uploaded text, Markdown, HTML, PDF, and DOCX files; split extracted text into overlapping word chunks (up to 120 chunks in the current function).
+- Compute document/query embeddings in the browser using OpenAI's `text-embedding-3-small` API and rank chunks using cosine similarity.
+- Let the user enter an OpenAI key when invoking the embedded bot; browser-side requests call OpenAI endpoints directly.
+- Preview the page in the UI, download a ZIP containing `index.html`, or upload `index.html` to an existing GCS bucket when deployment is selected.
+
+## Architecture
+
+```text
+Natural-language site request
+            |
+            v
+OpenAI website generation (gpt-5-nano)
+            |
+            v
+Generated HTML + Magnetar branding
+            |
+      +-----+------+
+      |            |
+   no RAG       RAG enabled
+      |            |
+      |     Parse uploaded docs -> chunks
+      |            |
+      |     Embed/query in browser via OpenAI API
+      +-----+------+
+            |
+            v
+ Save index.html + ZIP
+            |
+    Optional GCS bucket upload
+```
+
+The RAG widget performs vector matching in the generated page; it does not use Pinecone or another managed vector database. The document chunks are embedded into the generated HTML as text so that the static page can build vectors in the browser at first use.
+
+## Technology
+
+| Layer | Implementation |
+|---|---|
+| UI | Gradio |
+| Website generation | OpenAI API using `gpt-5-nano` |
+| Document extraction | `pypdf`, `python-docx`, standard text handling |
+| Chunking / matching | Word-based overlapping chunks and JavaScript cosine similarity |
+| Browser embeddings and Q&A | OpenAI API; `text-embedding-3-small` and configured chat model |
+| Packaging | ZIP with `index.html` |
+| Optional hosting | Google Cloud Storage Python client and service-account JSON |
+
+## Run and configure
+
+1. Open the exported source in Google Colab (or adapt it into a proper Python module by removing the `!pip` line and ensuring dependencies are installed separately).
+2. Install the listed packages: `gradio`, `openai`, `sentence-transformers`, `numpy`, `google-cloud-storage`, `pypdf`, and `python-docx`.
+3. Configure the source's `OPENAI_API_KEY` setting securely. It is an empty string in the committed source; the current server-side website-generation call will not work until valid credentials are supplied. Do not commit an API key.
+4. Launch the Gradio app and enter the site request. Upload supported documents only when enabling RAG.
+5. For deployment, select an existing GCS bucket and provide a service-account JSON file with the required write permissions. The script uploads `index.html`; it does not create or configure the bucket's access policy.
+6. Test both the downloaded ZIP and any cloud URL before sharing.
+
+## Demonstration assets
+
+- [Main interface](./Interface.jpeg)
+- [Full interface](./full_interface.jpeg)
+- [Full website](./full_website.jpeg)
+- [RAG enabled](./interface_withrag_selected.jpeg)
+- [API key prompt](./RAG_api_keypopup.jpeg)
+- [Example RAG output](./rag_output.jpeg)
+- [RAG verification example](./ragoutput_verification.jpeg)
+- [Cloud bucket deployment](./cloud_bucket_deployed.jpeg)
+- [Cloud RAG verification](./cloud_rag_verification.jpeg)
+- [Website deployed on cloud](./website_cloud.jpeg)
+
+## Important security and privacy properties
+
+- **Uploaded document content is included in the generated static HTML** when RAG is enabled. Anyone who can access that HTML/ZIP or publicly hosted page can inspect the embedded document chunks. Do not use confidential policies, personal records, or other restricted documents in a page that may be shared or publicly hosted.
+- The RAG user's OpenAI key is used by JavaScript in the browser and is therefore visible to the user who enters it and to browser tooling. This design is appropriate only for a user-supplied demonstration key, not a server-owned secret or shared enterprise deployment.
+- The uploaded Google Cloud service-account JSON is sensitive. Keep it out of source control and use a minimally privileged service account.
+- The implementation assumes the destination bucket's permissions are already set correctly. It does not configure access controls and should not be used to publish private content unintentionally.
+- Client-side calls require network connectivity and valid OpenAI credentials; the static page is not an offline RAG deployment.
+
+## Limitations
+
+- Generated HTML is model-produced and should be reviewed for correctness, accessibility, security, and responsive behavior before publication.
+- RAG is simple semantic retrieval over a limited chunk list; the UI does not produce robust source citations, per-claim provenance, or an independently verified answer.
+- An LLM can still make unsupported statements despite context-focused instructions.
+- The code does not implement server-side identity/access control, private document storage, rate limiting, usage accounting, or secure multi-user API-key management.
+- The checked-in source uses notebook shell syntax and `/content` output paths; adaptation is required for a conventional local deployment.
+
+## Project files
 
----
+The application source is [`websitecreation+rag+gcpdeployment.py`](./websitecreation%2Brag%2Bgcpdeployment.py). Existing generated examples and screenshots remain in this directory; the source generates its ZIP at runtime.
 
-## 📖 Overview
+## Author
 
-**MAGNETAR-WEBSTACK** is an end-to-end AI system that generates complete static websites from natural language instructions, optionally embeds a **document-grounded Retrieval-Augmented Generation (RAG) assistant**, and deploys the resulting website directly to **Google Cloud Platform (GCP)**.
+**Shubham Kumar Singh**
 
-This project is **not a UI mock**, **not a static template**, and **not a shallow RAG demo**.  
-It demonstrates how AI systems can be engineered to combine **content generation, document-faithful intelligence, and real cloud deployment**—while preserving **explicit user control, data boundaries, and deployment transparency**.
+## License
 
-MAGNETAR-WEBSTACK is designed as an **applied AI systems project**, complementing (but remaining independent from) the core **MAGNETAR-SOVEREIGN** language intelligence system.
+The following MIT License text is also provided as a standalone [`LICENSE`](./LICENSE) file in this project directory.
 
----
-
-## 🧠 What This System Does
-
-MAGNETAR-WEBSTACK enables a user to:
-
-1. Describe a website in natural language  
-2. Generate a complete, styled static website (`index.html`)
-3. Optionally attach an **inbuilt RAG bot** that answers questions **strictly from uploaded documents**
-4. Require an API key **only at the moment of querying**
-5. Package the site as a downloadable ZIP
-6. Deploy the site to **GCP static hosting**
-
-All of the above are demonstrated with **real outputs**, not simulated screens.
-
----
-
-## 🛡️ Design Principles
-
-### ✅ Explicit User Control
-- RAG is **opt-in**
-- Cloud deployment is **opt-in**
-- API key is requested **only when the bot is used**
-- No background inference or silent calls
-
-### ✅ Document-Faithful RAG
-- The bot answers **only from uploaded documents**
-- No fallback to general knowledge
-- No hallucinated policy answers
-
-### ✅ Static + Cloud Friendly
-- Output is a pure static website
-- Works locally and after cloud deployment
-- No backend required after deployment
-
----
-
-## 🚀 Key Capabilities
-
-- AI-driven static website generation
-- Optional document-grounded RAG assistant
-- Client-side API key usage
-- Policy-faithful question answering
-- Static ZIP packaging
-- One-click GCP deployment (bucket-based)
-- Works for internal policy sites, demos, and AI product pages
-
----
-
-## 🧠 System Architecture
-
-### Core Components
-
-**Website Generator**
-- Converts natural-language instructions into structured HTML
-- Produces a complete `index.html` with navigation, sections, and styling
-
-**Document RAG Engine**
-- Accepts PDF / DOCX / TXT / MD / HTML documents
-- Performs chunking and embedding
-- Retrieves only semantically relevant sections
-- Generates answers strictly grounded in retrieved content
-
-**Deployment Layer**
-- Packages website artifacts
-- Uploads to an existing GCP bucket
-- Preserves client-side RAG behavior post-deployment
-
----
-
-## 🛠 Tech Stack
-
-- **Language:** Python
-- **UI Framework:** Gradio
-- **LLM Access:** OpenAI (explicit, user-provided API key)
-- **Embeddings:** Single-model embedding space (dimension-safe)
-- **Vector Search:** In-memory cosine similarity
-- **Cloud:** Google Cloud Platform (Static Bucket Hosting)
-- **Output:** Static HTML + ZIP
-
----
-
-## 📂 Project Structure
-
-MAGNETAR-WEBSTACK/
-│── websitecreation+rag+gcpdeployment.py # Core system logic
-│── Sony Bangalore Office Policy Creation.docx
-│── Interface.jpeg
-│── full_interface.jpeg
-│── interface_withrag_selected.jpeg
-│── RAG_api_keypopup.jpeg
-│── rag_output.jpeg
-│── ragoutput_verification.jpeg
-│── clouddeployment_selected.jpeg
-│── cloud_bucket_deployed.jpeg
-│── cloud_rag_working.jpeg
-│── cloud_rag_verification.jpeg
-│── websitecreated_output.jpeg
-│── website_generated_withrag.jpeg
-│── website_cloud.jpeg
-│── full_website.jpeg
-│── README.md
-
-
----
-
-## 🧪 Step-by-Step System Demonstration
-
-### 1️⃣ Core Interface
-
-Initial system interface for website creation, RAG selection, and deployment options.
-
-![Interface](Interface.jpeg)
-
-![Full Interface](full_interface.jpeg)
-
----
-
-### 2️⃣ Enabling Document-Grounded RAG
-
-RAG can be explicitly enabled and documents uploaded.
-
-![Interface with RAG Selected](interface_withrag_selected.jpeg)
-
----
-
-### 3️⃣ API Key Prompt (Explicit & On-Demand)
-
-The API key is requested **only when the RAG bot is used**, and only in the browser.
-
-![RAG API Key Popup](RAG_api_keypopup.jpeg)
-
----
-
-### 4️⃣ RAG Answer Output (Raw)
-
-Example question asked against the uploaded policy document.
-
-![RAG Output](rag_output.jpeg)
-
----
-
-### 5️⃣ RAG Answer Verification Against Source Document
-
-The model’s answer matches the exact policy clause from the uploaded document.
-
-![RAG Output Verification](ragoutput_verification.jpeg)
-
----
-
-### 6️⃣ Cloud Deployment Selection
-
-Deployment to GCP is an explicit user choice.
-
-![Cloud Deployment Selected](clouddeployement_selected.jpeg)
-
----
-
-### 7️⃣ Successful GCP Bucket Deployment
-
-The generated website is deployed to an existing GCP bucket.
-
-![Cloud Bucket Deployed](cloud_bucket_deployed.jpeg)
-
----
-
-### 8️⃣ RAG Working After Cloud Deployment
-
-The RAG bot continues to function correctly **after deployment**.
-
-![Cloud RAG Working](cloudrag_working.jpeg)
-
----
-
-### 9️⃣ Cloud RAG Verification
-
-Policy-faithful answers remain consistent post-deployment.
-
-![Cloud RAG Verification](cloud_rag_verification.jpeg)
-
----
-
-### 🔟 Website Generation Output
-
-Generated static website output (local).
-
-![Website Created Output](websitecreated_output.jpeg)
-
-![Website Generated with RAG](website_generated_withrag.jpeg)
-
----
-
-### 1️⃣1️⃣ Website Live on Cloud
-
-Deployed website running on GCP.
-
-![Website on Cloud](website_cloud.jpeg)
-
-![Full Website](full_website.jpeg)
-
----
-
-## ⚠️ Limitations & Disclosure
-
-### API Dependency
-- LLM access requires a user-provided API key
-- Keys are never stored or reused
-
-### No Reranking
-- Retrieval uses direct cosine similarity
-- No cross-encoder reranking layer
-
-### Static Hosting Constraints
-- No server-side memory
-- RAG remains client-triggered
-
-### Real, Unfiltered Outputs
-- No answer rewriting
-- No summarization
-- No hidden corrections
-
-All screenshots reflect **actual system behavior**, not curated demos.
-
----
-
-## ▶️ Usage
-
-```bash
-python websitecreation+rag+gcpdeployment.py
-Follow the UI steps to:
-
-Describe the website
-
-Upload documents (optional)
-
-Enable RAG (optional)
-
-Deploy to GCP (optional)
-
-🔮 Future Enhancements
-Multi-document routing
-
-Source citations in answers
-
-Optional reranking layer
-
-Support for AWS / Azure static hosting
-
-Website theming controls
-
-Enterprise authentication layer
-
-👨‍💻 Author
-Shubham Singh
-
-
-📜 License
 MIT License
+
+Copyright (c) 2026 Shubham Kumar Singh
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
